@@ -138,6 +138,7 @@ export default function Home() {
   const [manualCopy, setManualCopy] = useState("");
   const t = copy[lang];
   const e = examples[lang];
+  const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\\//, "")}`;
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -164,7 +165,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a href="#top" className="brand" aria-label="U Vision home"><img src="/uvision-horizontal.jpeg" alt="宇見顧問有限公司 U Vision Consulting Limited" width="920" height="324" /></a>
+        <a href="#top" className="brand" aria-label="U Vision home"><img src={asset("uvision-horizontal.jpeg")} alt="宇見顧問有限公司 U Vision Consulting Limited" width="920" height="324" /></a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {t.nav.map((item, index) => <a key={item} href={`#${t.navIds[index]}`}>{item}</a>)}
         </nav>
@@ -181,7 +182,7 @@ export default function Home() {
           <p className="kicker">{t.eyebrow}</p><h1>{t.hero}</h1><p className="hero-text">{t.heroText}</p>
           <div className="hero-actions"><a className="button primary" href="#contact">{t.consult}<ArrowRight size={18}/></a><a className="button secondary" href="#process">{t.learn}</a></div>
         </div>
-        <div className="official-hero-logo"><img src="/assets/uvision-logo.webp" alt="宇見顧問有限公司正式標誌" width="1448" height="1086" /></div>
+        <div className="official-hero-logo"><img src={asset("assets/uvision-logo.webp")} alt="宇見顧問有限公司正式標誌" width="1448" height="1086" /></div>
       </section>
 
       <section className="promise-strip"><div className="section-shell promise-inner"><ShieldCheck size={28}/><div><h2>{t.promiseTitle}</h2><p>{t.promise}</p></div></div></section>
@@ -252,24 +253,24 @@ export default function Home() {
             {name:"Instagram",account:"@uvisionmacau",url:"https://www.instagram.com/uvisionmacau/",icon:4,qr:12},
             {name:"Threads",account:"@uvisionmacau",url:"https://www.threads.com/@uvisionmacau",icon:5,qr:14},
           ].map((platform) => <article className="platform-card" key={platform.name}>
-            <h3><img className="platform-icon" src={`/card-asset-${platform.icon}.svg`} alt="" />{platform.name}</h3>
+            <h3><img className="platform-icon" src={asset(`card-asset-${platform.icon}.svg`)} alt="" />{platform.name}</h3>
             <p>{platform.account}</p>
-            <a href={platform.url} target="_blank" rel="noreferrer" aria-label={`${platform.name} ${platform.account}`}><img className="platform-qr" src={`/card-asset-${platform.qr}.png`} alt={`${platform.name} QR Code`} width="980" height="980" /></a>
+            <a href={platform.url} target="_blank" rel="noreferrer" aria-label={`${platform.name} ${platform.account}`}><img className="platform-qr" src={asset(`card-asset-${platform.qr}.png`)} alt={`${platform.name} QR Code`} width="980" height="980" /></a>
             <a className="platform-open" href={platform.url} target="_blank" rel="noreferrer">{lang === "zh" ? "開啟" : "Open"} {platform.name}<ArrowRight size={16}/></a>
           </article>)}
           <article id="wechat" className="platform-card wechat-contact">
-            <h3><img className="platform-icon" src="/card-asset-2.svg" alt="" />WeChat {lang === "zh" ? "微信" : ""}</h3>
+            <h3><img className="platform-icon" src={asset("card-asset-2.svg")} alt="" />WeChat {lang === "zh" ? "微信" : ""}</h3>
             <p>U Vision · {lang === "zh" ? "宇見顧問" : "U Vision Consulting"}</p>
-            <a href="/uvision-wechat-qr.jpg" target="_blank" rel="noreferrer" aria-label={lang === "zh" ? "放大宇見微信加好友 QR Code" : "Enlarge the U Vision WeChat add-friend QR code"}><img className="platform-qr" src="/uvision-wechat-qr.jpg" alt={lang === "zh" ? "宇見 U Vision 微信正式加好友 QR Code" : "Official U Vision WeChat add-friend QR code"} width="1206" height="1536" /></a>
-            <a className="platform-open" href="/uvision-wechat-qr.jpg" target="_blank" rel="noreferrer">{lang === "zh" ? "放大 QR Code" : "Enlarge QR code"}<ArrowRight size={16}/></a>
-            <a className="platform-open" href="/uvision-wechat-qr.jpg" download="U-Vision-WeChat.jpg">{lang === "zh" ? "儲存微信 QR Code" : "Save WeChat QR code"}</a>
+            <a href={asset("uvision-wechat-qr.jpg")} target="_blank" rel="noreferrer" aria-label={lang === "zh" ? "放大宇見微信加好友 QR Code" : "Enlarge the U Vision WeChat add-friend QR code"}><img className="platform-qr" src={asset("uvision-wechat-qr.jpg")} alt={lang === "zh" ? "宇見 U Vision 微信正式加好友 QR Code" : "Official U Vision WeChat add-friend QR code"} width="1206" height="1536" /></a>
+            <a className="platform-open" href={asset("uvision-wechat-qr.jpg")} target="_blank" rel="noreferrer">{lang === "zh" ? "放大 QR Code" : "Enlarge QR code"}<ArrowRight size={16}/></a>
+            <a className="platform-open" href={asset("uvision-wechat-qr.jpg")} download="U-Vision-WeChat.jpg">{lang === "zh" ? "儲存微信 QR Code" : "Save WeChat QR code"}</a>
             <p>{lang === "zh" ? "電腦用戶可用微信掃描；手機用戶可先儲存圖片，再在微信「掃一掃」從相簿選取。加為好友後，貼上查詢內容並自行發送。" : "On a computer, scan with WeChat. On a phone, save the image and select it from your album in WeChat Scan. Add us as a friend, then paste and send your enquiry."}</p>
           </article>
         </section>
       </div></section>
 
       <section className="section-shell boundaries"><article><h2>{t.boundaryTitle}</h2><p>{t.boundary}</p></article><article><h2>{t.privacyTitle}</h2><p>{t.privacyText}</p></article></section>
-      <footer><div className="section-shell footer-main"><img src="/assets/uvision-logo.webp" alt="宇見顧問 U Vision Consulting"/><p>{t.footerTagline}</p></div><div className="section-shell footer-bottom"><span>© 2026 {t.rights}</span><span>uvisionconsulting@gmail.com</span></div></footer>
+      <footer><div className="section-shell footer-main"><img src={asset("assets/uvision-logo.webp")} alt="宇見顧問 U Vision Consulting"/><p>{t.footerTagline}</p></div><div className="section-shell footer-bottom"><span>© 2026 {t.rights}</span><span>uvisionconsulting@gmail.com</span></div></footer>
     </main>
   );
 }
