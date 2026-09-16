@@ -138,7 +138,7 @@ export default function Home() {
   const [manualCopy, setManualCopy] = useState("");
   const t = copy[lang];
   const e = examples[lang];
-  const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\\//, "")}`;
+  const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
