@@ -14,10 +14,10 @@ const examples = {
     items: [
       ["滲漏水問題", "屋企不斷滲水，樓上同管理公司各有講法，唔知應該先搵邊個。", "整理滲水紀錄及各方回覆，釐清待查問題，協助規劃檢測、溝通及跟進次序。"],
       ["樓宇管理問題", "大廈準備做大維修，報價、工程範圍同開會文件睇唔明，點樣提出疑問？", "梳理工程及會議資料，列出需要釐清的重點，協助準備提問及溝通。"],
-      ["租務與合作爭議", "租客拖欠租金，承諾一拖再拖；又或者合作出現分歧，大家各執一詞。", "整理協議、付款及對話紀錄，找出爭議核心，比較協商及尋求專業協助等下一步。"],
       ["政府信件理解", "收到政府信件，要求補文件或者作出回覆，但唔清楚要做啲乜。", "解讀信件要求，整理期限、所需資料及待確認事項，協助準備回覆內容。"],
       ["企業與機構危機疑難應對", "客戶投訴放上網，員工、客戶同合作伙伴都追問，應該點回應？", "整理事實、辨識風險，規劃溝通次序及回應重點。"],
       ["政策講解與企業機構訂造培訓", "新政策同業務有關，但同事唔清楚有咩影響；前線遇到投訴，亦唔知點應對。", "按機構需要講解政策，結合工作情境，設計投訴處理、傳媒溝通或危機應對培訓。"],
+      ["租務與合作爭議", "租客拖欠租金，承諾一拖再拖；又或者合作出現分歧，大家各執一詞。", "整理協議、付款及對話紀錄，找出爭議核心，比較協商及尋求專業協助等下一步。"],
     ],
   },
   en: {
@@ -28,10 +28,10 @@ const examples = {
     items: [
       ["Water seepage", "Water keeps leaking into my home. The upstairs neighbour and building manager give different accounts. Who should I speak to first?", "Organise seepage records and responses, identify unanswered questions, and plan the sequence of inspections, communication and follow-up."],
       ["Building management", "Our building is planning major repairs. I do not understand the quotations, scope or meeting papers. What questions should I ask?", "Review project and meeting information, identify points needing clarification, and help prepare questions and communications."],
-      ["Tenancy and partnership disputes", "My tenant keeps delaying overdue rent payments. Or a business partnership has run into disagreements, with conflicting accounts.", "Organise agreements, payment records and conversations, identify the core dispute, and compare next steps such as negotiation or seeking professional support."],
       ["Government letters", "I received a government letter asking for more documents or a response, but I am not sure what I need to do.", "Clarify the letter’s requests, deadlines, required information and outstanding questions, and help prepare a response."],
       ["Business and organisational crisis response", "A customer has posted a complaint online. Staff, customers and partners are asking questions. How should we respond?", "Establish the facts, identify risks and plan the sequence and substance of communications."],
       ["Policy briefings and tailored training", "A new policy affects our work, but colleagues are unsure how. Frontline staff also need help handling complaints.", "Explain policies relevant to the organisation and design scenario-based training in complaint handling, media communication or crisis response."],
+      ["Tenancy and partnership disputes", "My tenant keeps delaying overdue rent payments. Or a business partnership has run into disagreements, with conflicting accounts.", "Organise agreements, payment records and conversations, identify the core dispute, and compare next steps such as negotiation or seeking professional support."],
     ],
   },
 } as const;
@@ -47,11 +47,11 @@ const copy = {
     servicesIntro: "以下是常見的協助範圍。每個個案的情況不同，宇見會先了解事實，再說明可提供的支援。",
     serviceItems: [
       ["滲漏水與樓宇管理", "整理問題來源、持份者說法、程序及可行處理方向。"],
-      ["租務與合作爭議", "釐清文件、時間線、責任主張及協商選項。"],
       ["政府信件與程序理解", "把正式文件轉化成容易理解的重點、期限及下一步。"],
       ["企業與機構危機疑難應對", "整理事實、辨識風險，規劃溝通次序及回應重點。"],
       ["政策講解與企業機構訂造培訓", "剖析公共政策，訂定針對性培訓內容。"],
       ["其他生活及營運難題", "問題未必有現成分類；先談清楚，再判斷如何處理。"],
+      ["租務與合作爭議", "釐清文件、時間線、責任主張及協商選項。"],
     ],
     processKicker: "服務流程", processTitle: "從混亂，到清晰可行。",
     steps: [
@@ -93,11 +93,11 @@ const copy = {
     servicesIntro: "These are common areas in which we assist. Every case is different; we first understand the facts, then explain the support we can provide.",
     serviceItems: [
       ["Water seepage & building management", "Organise possible causes, stakeholder accounts, procedures and practical paths forward."],
-      ["Tenancy & partnership disputes", "Clarify documents, timelines, competing claims and negotiation options."],
       ["Government letters & procedures", "Turn formal documents into understandable priorities, deadlines and next steps."],
       ["Crisis & complex-issue response for businesses and organisations", "Establish the facts, identify risks and plan the sequence and substance of communications."],
       ["Policy briefings & tailored training for businesses and organisations", "Analyse public policy and develop targeted training content."],
       ["Other practical challenges", "Not every problem fits a category. We first clarify it, then determine the right way forward."],
+      ["Tenancy & partnership disputes", "Clarify documents, timelines, competing claims and negotiation options."],
     ],
     processKicker: "Our process", processTitle: "From confusion to a clear, workable plan.",
     steps: [
@@ -198,7 +198,7 @@ export default function Home() {
         <div className="section-heading split-heading"><div><p className="kicker">{t.servicesKicker}</p><h2>{t.servicesTitle}</h2></div><p>{t.servicesIntro}</p></div>
         <div className="service-grid">
           {t.serviceItems.map(([title, text], index) => {
-            const icons = [Building2, FileText, FileText, MessageCircle, Users, ChevronRight]; const Icon = icons[index];
+            const icons = [Building2, FileText, MessageCircle, Users, ChevronRight, FileText]; const Icon = icons[index];
             return <article className="service-item" key={title}><Icon size={24}/><div><h3>{title}</h3><p>{text}</p></div></article>;
           })}
         </div>
