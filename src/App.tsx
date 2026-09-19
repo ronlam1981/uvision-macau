@@ -51,8 +51,8 @@ const copy = {
       ["政府信件與程序理解", "把正式文件轉化成容易理解的重點、期限及下一步。"],
       ["企業與機構危機疑難應對", "整理事實、辨識風險，規劃溝通次序及回應重點。"],
       ["政策講解與企業機構訂造培訓", "剖析公共政策，訂定針對性培訓內容。"],
-      ["其他生活及營運難題", "問題未必有現成分類；先談清楚，再判斷如何處理。"],
       ["租務與合作爭議", "釐清文件、時間線、責任主張及協商選項。"],
+      ["其他生活及營運難題", "問題未必有現成分類；先談清楚，再判斷如何處理。"],
     ],
     processKicker: "服務流程", processTitle: "從混亂，到清晰可行。",
     steps: [
@@ -98,8 +98,8 @@ const copy = {
       ["Government letters & procedures", "Turn formal documents into understandable priorities, deadlines and next steps."],
       ["Crisis & complex-issue response for businesses and organisations", "Establish the facts, identify risks and plan the sequence and substance of communications."],
       ["Policy briefings & tailored training for businesses and organisations", "Analyse public policy and develop targeted training content."],
-      ["Other practical challenges", "Not every problem fits a category. We first clarify it, then determine the right way forward."],
       ["Tenancy & partnership disputes", "Clarify documents, timelines, competing claims and negotiation options."],
+      ["Other practical challenges", "Not every problem fits a category. We first clarify it, then determine the right way forward."],
     ],
     processKicker: "Our process", processTitle: "From confusion to a clear, workable plan.",
     steps: [
@@ -200,7 +200,7 @@ export default function Home() {
         <div className="section-heading split-heading"><div><p className="kicker">{t.servicesKicker}</p><h2>{t.servicesTitle}</h2></div><p>{t.servicesIntro}</p></div>
         <div className="service-grid">
           {t.serviceItems.map(([title, text], index) => {
-            const icons = [Building2, Building2, FileText, MessageCircle, Users, ChevronRight, FileText]; const Icon = icons[index];
+            const icons = [Building2, Building2, FileText, MessageCircle, Users, FileText, ChevronRight]; const Icon = icons[index];
             return <article className="service-item" key={title}><Icon size={24}/><div><h3>{title}</h3><p>{text}</p></div></article>;
           })}
         </div>
