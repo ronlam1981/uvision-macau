@@ -38,10 +38,10 @@ const examples = {
 
 const copy = {
   zh: {
-    nav: ["我們如何協助", "服務流程", "創辦人", "聯絡我們"], navIds: ["services", "process", "founder", "contact"], language: "EN",
-    eyebrow: "實務型疑難個案與決策顧問", hero: "把複雜問題整理清楚，\n找出可以前行的下一步。",
-    heroText: "宇見協助居民、企業及機構整理資料、釐清問題、辨識風險和比較選項，讓你在複雜處境中作出更清楚的決定。",
-    consult: "開始查詢", learn: "了解服務方式", promiseTitle: "我們陪你看清，不替你作主",
+    nav: ["我們如何協助", "創辦人", "服務流程", "聯絡我們"], navIds: ["services", "founder", "process", "contact"], language: "EN",
+    eyebrow: "由林宇滔創立", hero: "把複雜問題理清，\n讓下一步更清晰。",
+    heroText: "憑藉創辦人林宇滔多年來參與處理數千個個案及事件的經驗，宇見協助個人、家庭、企業及機構理清各類問題、釐清事實、辨識風險及比較可行選項，更安心地選擇下一步，減少不必要的時間與金錢耗費，少走冤枉路。",
+    consult: "查詢我們能否協助", learn: "了解服務", promiseTitle: "我們陪你看清，不替你作主",
     promise: "我們不承諾個案結果，也不以「關係」作賣點。宇見承諾的是有系統的方法、透明的判斷，以及清晰可行的下一步。",
     servicesKicker: "我們如何協助", servicesTitle: "當資料零散、說法不一，\n先把問題看清楚。",
     servicesIntro: "以下是常見的協助範圍。每個個案的情況不同，宇見會先了解事實，再說明可提供的支援。",
@@ -63,9 +63,9 @@ const copy = {
     waysKicker: "服務方式", waysTitle: "按問題需要，提供合適深度的支援。",
     ways: [["初步諮詢", "了解問題、整理重點，判斷下一步應由誰處理。"], ["個案分析", "根據已提供資料，拆解問題、選項、風險及行動次序。"], ["持續支援", "就複雜個案協助跟進資料、會議、溝通及進度節點。"]],
     price: "服務範圍及收費會在了解個案後說明；開始工作前，會先確認內容及安排。",
-    founderKicker: "創辦人", founderTitle: "由林宇滔創立，\n把經驗化為清晰的下一步。",
+    founderSummary: ["從新聞採訪、公共議題分析，到協助居民及機構梳理疑難，林宇滔一直重視先聆聽、查證，再找出問題核心。", "創立宇見，是希望把這些經驗轉化為有步驟、有重點的實務支援，陪伴客戶理解處境、比較選項，選擇下一步。"], founderMore: "了解創辦人與宇見理念", founderCaption: "林宇滔｜宇見顧問創辦人", founderKicker: "創辦人", founderTitle: "由林宇滔創立，\n把經驗化為清晰的下一步。",
     founderParas: [
-      "林宇滔曾任記者、節目主持，具時事評論及專欄寫作經驗，亦曾擔任公共政策、傳媒溝通及危機管理的培訓導師。他長期關注澳門公共政策及各類民生議題，曾協助居民、機構及團體梳理、協調及解決數千個個案，對澳門問題有深入而獨到的見解。",
+      "林宇滔曾任記者、節目主持，具時事評論及專欄寫作經驗，亦曾擔任公共政策、傳媒溝通及危機管理的培訓導師。在創立宇見前，他長期關注澳門公共政策及各類民生議題，曾協助居民、機構及團體梳理、協調及解決數千個個案，對澳門問題有深入而獨到的見解。",
       "從資料梳理、事實查證、政策分析，到面對不同立場的當事人，他重視先聆聽、釐清事實，再找出問題核心。",
       "創立宇見顧問，是希望把這些經驗轉化為居民、企業及機構可使用的實務支援：整理混亂資訊、辨識風險、比較選項，讓客戶清楚選擇下一步，不用鑽牛角尖，也不用走冤枉路。",
     ],
@@ -84,10 +84,10 @@ const copy = {
     footerTagline: "以同理看見本質，以遠見引向未來。", rights: "宇見顧問有限公司。保留所有權利。",
   },
   en: {
-    nav: ["How we help", "Our process", "Founder", "Contact"], navIds: ["services", "process", "founder", "contact"], language: "繁中",
-    eyebrow: "Practical case and decision advisory", hero: "Bring clarity to complex problems.\nFind a practical way forward.",
-    heroText: "U Vision helps individuals, businesses and organisations organise information, clarify issues, identify risks and compare options—so they can make clearer decisions in complex situations.",
-    consult: "Start an enquiry", learn: "How we work", promiseTitle: "We help you see clearly. You remain in control.",
+    nav: ["How we help", "Founder", "Our process", "Contact"], navIds: ["services", "founder", "process", "contact"], language: "繁中",
+    eyebrow: "Founded by Ron Lam", hero: "Bring clarity to complex problems.\nSee your next step clearly.",
+    heroText: "Drawing on founder Ron Lam’s years of experience helping handle thousands of cases and incidents, U Vision helps individuals, families, businesses and organisations clarify problems and facts, identify risks and compare practical options. Choose your next step with greater confidence, reduce unnecessary costs in time and money, and avoid needless detours.",
+    consult: "Ask whether we can help", learn: "Explore our services", promiseTitle: "We help you see clearly. You remain in control.",
     promise: "We do not guarantee outcomes or sell access through connections. We commit to a structured method, transparent judgement and clear, practical next steps.",
     servicesKicker: "How we help", servicesTitle: "When facts are scattered and accounts conflict,\nclarity comes first.",
     servicesIntro: "These are common areas in which we assist. Every case is different; we first understand the facts, then explain the support we can provide.",
@@ -109,9 +109,9 @@ const copy = {
     waysKicker: "Ways to work with us", waysTitle: "The right depth of support for the issue at hand.",
     ways: [["Initial consultation", "Understand the issue, identify priorities and decide who should handle the next step."], ["Case analysis", "Review the available information and set out issues, options, risks and priorities."], ["Ongoing support", "Support complex cases through information review, meetings, communications and progress checks."]],
     price: "Scope and fees are explained after we understand the case. The work and arrangement will be confirmed before we begin.",
-    founderKicker: "Founder", founderTitle: "Founded by Ron Lam,\nturning experience into clear next steps.",
+    founderSummary: ["From journalism and public-issue analysis to helping residents and organisations navigate difficult situations, Ron Lam starts by listening, checking the facts and identifying the core issue.", "He founded U Vision to turn that experience into structured, practical support, helping clients understand their situation, compare options and choose their next step."], founderMore: "About our founder and approach", founderCaption: "Ron Lam | Founder, U Vision Consulting", founderKicker: "Founder", founderTitle: "Founded by Ron Lam,\nturning experience into clear next steps.",
     founderParas: [
-      "Ron Lam is a former journalist and television presenter with experience in current-affairs commentary and column writing. He has also served as a trainer in public policy, media communication and crisis management. Having long followed public policy and community issues in Macao, he has helped residents, organisations and community groups organise, coordinate and resolve thousands of cases, developing a deep and distinctive understanding of local issues.",
+      "Ron Lam is a former journalist and television presenter with experience in current-affairs commentary and column writing. He has also served as a trainer in public policy, media communication and crisis management. Before founding U Vision, he followed public policy and community issues in Macao and helped residents, organisations and community groups organise, coordinate and resolve thousands of cases, developing a deep and distinctive understanding of local issues.",
       "Whether organising information, verifying facts, analysing policy or working with people who hold different positions, he begins by listening, clarifying the facts and identifying the heart of the problem.",
       "He founded U Vision to turn this experience into practical support for individuals, businesses and organisations: bringing order to complex information, identifying risks and comparing options, so clients can choose their next step clearly without getting stuck or taking avoidable detours.",
     ],
@@ -180,10 +180,17 @@ export default function Home() {
       <section id="top" className="hero section-shell">
         <div className="hero-copy">
           <p className="kicker">{t.eyebrow}</p><h1>{t.hero}</h1><p className="hero-text">{t.heroText}</p>
-          <div className="hero-actions"><a className="button primary" href="#contact">{t.consult}<ArrowRight size={18}/></a><a className="button secondary" href="#process">{t.learn}</a></div>
+          <div className="hero-actions"><a className="button primary" href="#contact">{t.consult}<ArrowRight size={18}/></a><a className="button secondary" href="#services">{t.learn}</a></div>
         </div>
-        <div className="official-hero-logo"><img src={asset("assets/uvision-logo.webp")} alt="宇見顧問有限公司正式標誌" width="1448" height="1086" /></div>
+        <figure className="founder-portrait"><img src={asset("assets/ron-founder.webp")} alt={t.founderCaption} width="960" height="720" fetchPriority="high" /><figcaption>{t.founderCaption}</figcaption></figure>
       </section>
+
+      <section id="founder" className="founder-section"><div className="section-shell founder-grid">
+        <div className="founder-title"><p className="kicker">{t.founderKicker}</p><h2>{t.founderTitle}</h2></div>
+        <div className="founder-copy">{t.founderSummary.map((p) => <p key={p}>{p}</p>)}
+          <details className="founder-details"><summary>{t.founderMore}</summary><div>{t.founderParas.map((p) => <p key={p}>{p}</p>)}</div></details>
+        </div>
+      </div></section>
 
       <section className="promise-strip"><div className="section-shell promise-inner"><ShieldCheck size={28}/><div><h2>{t.promiseTitle}</h2><p>{t.promise}</p></div></div></section>
 
@@ -220,10 +227,7 @@ export default function Home() {
         <p className="price-note"><Check size={18}/>{t.price}</p>
       </section>
 
-      <section id="founder" className="founder-section"><div className="section-shell founder-grid">
-        <div className="founder-title"><p className="kicker">{t.founderKicker}</p><h2>{t.founderTitle}</h2><div className="founder-initial">RL</div></div>
-        <div className="founder-copy">{t.founderParas.map((p) => <p key={p}>{p}</p>)}</div>
-      </div></section>
+
 
       <section className="section-shell content-section resources-section">
         <div className="section-heading split-heading"><div><p className="kicker">{t.resourcesKicker}</p><h2>{t.resourcesTitle}</h2></div></div>
