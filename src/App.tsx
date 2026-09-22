@@ -75,7 +75,7 @@ const copy = {
     contactKicker: "聯絡我們", contactTitle: "先把問題說清楚，\n再一起找下一步。",
     contactIntro: "你可以直接聯絡我們，或填寫三項基本資料，再前往 WhatsApp 確認發送。",
     name: "姓名", namePlaceholder: "如何稱呼你", method: "聯絡方式", methodPlaceholder: "電話、WhatsApp 或電郵", category: "問題類別", select: "請選擇",
-    categories: ["滲漏水／樓宇管理", "租務糾紛", "政府信件理解", "投訴／危機應對", "合作爭議", "其他"],
+    categories: ["滲漏水／樓宇管理", "租務糾紛", "政府信件理解", "投訴／危機應對", "合作爭議", "政策講解／訂造培訓", "其他"],
     privacy: "只需提供基本聯絡資料。請勿在此提交身份證、合約、相片或其他個案文件。",
     send: "前往 WhatsApp 確認發送", unsent: "資料尚未送出，請在通訊軟件內完成發送。", direct: "直接聯絡",
     address: "澳門桔仔街65號一樓（到訪請提前預約）", qr: "掃描 QR Code 開啟 WhatsApp",
@@ -122,7 +122,7 @@ const copy = {
     contactKicker: "Contact us", contactTitle: "Clarify the issue first.\nThen find the next step together.",
     contactIntro: "Contact us directly, or provide three basic details before continuing to WhatsApp to confirm and send.",
     name: "Name", namePlaceholder: "How should we address you?", method: "Contact details", methodPlaceholder: "Phone, WhatsApp or email", category: "Type of issue", select: "Please select",
-    categories: ["Water seepage / building management", "Tenancy dispute", "Government letter", "Complaint / crisis response", "Partnership dispute", "Other"],
+    categories: ["Water seepage / building management", "Tenancy dispute", "Government letter", "Complaint / crisis response", "Partnership dispute", "Policy briefing / tailored training", "Other"],
     privacy: "Basic contact details only. Do not submit identity documents, contracts, photos or case files here.",
     send: "Continue to WhatsApp", unsent: "Nothing has been sent yet. Please complete sending in the messaging app.", direct: "Contact directly",
     address: "1/F, No. 65 Rua dos Cules, Macao (visits by appointment)", qr: "Scan to open WhatsApp",
@@ -245,7 +245,7 @@ export default function Home() {
         <form className="enquiry-form" onSubmit={handleSubmit}>
           <label>{t.name}<input name="name" required placeholder={t.namePlaceholder}/></label>
           <label>{t.method}<input name="contact" required placeholder={t.methodPlaceholder}/></label>
-          <label>{t.category}<select name="category" required defaultValue=""><option value="" disabled>{t.select}</option>{t.categories.map((category) => <option key={category}>{category}</option>)}<option>{lang === "zh" ? "政策講解／訂造培訓" : "Policy briefing / tailored training"}</option></select></label>
+          <label>{t.category}<select name="category" required defaultValue=""><option value="" disabled>{t.select}</option>{t.categories.map((category) => <option key={category}>{category}</option>)}</select></label>
           <p className="form-privacy"><ShieldCheck size={17}/>{t.privacy}</p><button type="submit" className="button primary full">{t.send}<ArrowRight size={18}/></button><p className="unsent">{t.unsent}</p>
           <button type="submit" name="action" value="copy" className="button secondary full copy-enquiry">{lang === "zh" ? "複製查詢內容（微信／其他平台）" : "Copy enquiry for WeChat / other platforms"}</button>
           <p className="copy-status" role="status">{copyStatus}</p>
