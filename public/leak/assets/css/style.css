@@ -335,6 +335,16 @@ footer a{color:#BFD4EA}
 .lp-qa dt:first-of-type{border-top:none;margin-top:0;padding-top:0}
 .lp-qa dd{margin:.5em 0 0;color:var(--ink-soft)}
 .lp-qa dd b{color:var(--ink)}
+.qa-list{margin:.7em 0 0;padding-left:0;list-style:none}
+.qa-list li{
+  position:relative;padding-left:15px;margin-bottom:.45em;
+  color:var(--ink-soft);line-height:1.62;
+}
+.qa-list li:last-child{margin-bottom:0}
+.qa-list li::before{
+  content:"";position:absolute;left:0;top:.72em;
+  width:5px;height:1px;background:var(--vision-mid);
+}
 
 /* 結尾 CTA */
 .lp-cta{background:#fff;border-top:1px solid var(--hair)}
