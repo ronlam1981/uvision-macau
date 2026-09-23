@@ -75,7 +75,7 @@ const copy = {
     boundaryTitle: "服務界線",
     boundary: "宇見提供資料整理、問題分析、選項比較、溝通及行動規劃支援，不提供法律諮詢或訴訟代理，不保證個案結果，亦不代替律師、工程師、會計師、醫療人員或其他須具專業資格人士的專業意見或法定工作。需要時，我們會建議尋求合適專業人士協助。",
     privacyTitle: "私隱提示", privacyText: "你主動提供的聯絡資料只會用於回覆查詢及安排服務。未經同意不會用作其他推廣用途。請先經聯絡確認，再以合適方式提交個案文件。",
-    footerTagline: "看清問題，看清選項", rights: "宇見顧問有限公司。保留所有權利。",
+    footerTagline: "釐清問題　看清選項", rights: "宇見顧問有限公司。保留所有權利。",
   },
   en: {
     nav: ["Founder", "How we help", "Our process", "Contact"], navIds: ["founder", "services", "process", "contact"], language: "繁中",

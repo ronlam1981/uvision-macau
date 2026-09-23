@@ -1,0 +1,14 @@
+# 依賴與建置產物：不進倉庫，由 npm install / npm run build 重新產生
+node_modules/
+dist/
+*.tsbuildinfo
+
+# 本機環境
+.env
+.env.*
+!.env.example
+
+# 作業系統與編輯器雜項
+.DS_Store
+Thumbs.db
+*.log
