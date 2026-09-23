@@ -1,5 +1,6 @@
 /* 一按複製聯絡資料。
-   唯一一段 JavaScript：無外部程式庫、無追蹤、不收集任何資料。 */
+   本站自寫的唯一一段 JavaScript：無外部程式庫，不發送任何請求。
+   （站內另載 Cloudflare Web Analytics：無 cookie、不追蹤個人身分。） */
 (function () {
   'use strict';
 

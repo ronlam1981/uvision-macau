@@ -36,6 +36,15 @@ npm run build
 `github.io` 專案路徑下都能正確載入資源；站內連往 `/leak/` 的連結
 因此也要用相對寫法（`leak/consult.html`），不要加開頭的斜線。
 
+## 統計
+
+以 **Cloudflare Web Analytics** 記錄頁面瀏覽，載入於首頁、`/leak/` 兩頁及 404 頁。
+**不使用 cookie、不追蹤個人身分、不作跨網站追蹤**，只提供聚合數字
+（瀏覽量、來源、停留時間）。追蹤碼的 token 是公開值，會出現在網頁原始碼中，
+並非密鑰。
+
+如需停用：移除四個頁面中 `static.cloudflareinsights.com` 那段 script 即可。
+
 ## 搜尋引擎
 
 - `public/robots.txt`、`public/sitemap.xml`（本站是域名根目錄，robots.txt 生效）
