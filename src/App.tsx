@@ -150,7 +150,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a href="#top" className="brand" aria-label="U Vision home"><img src={asset("uvision-horizontal.jpeg")} alt="宇見顧問有限公司 U Vision Consulting Limited" width="920" height="324" /></a>
+        <a href="#top" className="brand" aria-label="U Vision home"><img src={asset("uvision-logo-h.svg")} alt="宇見顧問有限公司 U Vision Consulting Limited" width="1613" height="529" /></a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {t.nav.map((item, index) => <a key={item} href={`#${t.navIds[index]}`}>{item}</a>)}
         </nav>
@@ -252,7 +252,7 @@ export default function Home() {
       </div></section>
 
       <section className="section-shell boundaries"><article><h2>{t.boundaryTitle}</h2><p>{t.boundary}</p></article><article><h2>{t.privacyTitle}</h2><p>{t.privacyText}</p></article></section>
-      <footer><div className="section-shell footer-main"><img src={asset("uvision-horizontal.jpeg")} alt="宇見顧問有限公司 · U Vision Consultoria Limitada · U Vision Consulting Limited" width="920" height="324"/><p>{t.footerTagline}</p></div><div className="section-shell footer-bottom"><span>© 2026 {t.rights}</span><span>uvisionconsulting@gmail.com</span></div></footer>
+      <footer><div className="section-shell footer-main"><img src={asset("uvision-logo-h.svg")} alt="宇見顧問有限公司 · U Vision Consultoria Limitada · U Vision Consulting Limited" width="1613" height="529"/><p>{t.footerTagline}</p></div><div className="section-shell footer-bottom"><span>© 2026 {t.rights}</span><span>uvisionconsulting@gmail.com</span></div></footer>
     </main>
   );
 }
