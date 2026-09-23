@@ -101,3 +101,6 @@ section[id]{scroll-margin-top:150px}
 
 /* Display all three registered company names in the footer logo. */
 .footer-main img{width:min(100%,320px);height:auto;object-fit:contain}
+
+/* 首屏細標為英文口號時，改用西文字體與較疏字距 */
+.kicker.kicker-en{font-family:Montserrat,Arial,sans-serif;font-weight:500;font-size:15px;letter-spacing:.1em;color:var(--mid)}
