@@ -75,7 +75,7 @@ const copy = {
     boundaryTitle: "服務界線",
     boundary: "宇見提供資料整理、問題分析、選項比較、溝通及行動規劃支援，不提供法律諮詢或訴訟代理，不保證個案結果，亦不代替律師、工程師、會計師、醫療人員或其他須具專業資格人士的專業意見或法定工作。需要時，我們會建議尋求合適專業人士協助。",
     privacyTitle: "私隱提示", privacyText: "你主動提供的聯絡資料只會用於回覆查詢及安排服務。未經同意不會用作其他推廣用途。請先經聯絡確認，再以合適方式提交個案文件。",
-    footerTagline: "以同理看見本質，以遠見引向未來。", rights: "宇見顧問有限公司。保留所有權利。",
+    footerTagline: "看清問題，看清選項", rights: "宇見顧問有限公司。保留所有權利。",
   },
   en: {
     nav: ["Founder", "How we help", "Our process", "Contact"], navIds: ["founder", "services", "process", "contact"], language: "繁中",
@@ -112,7 +112,7 @@ const copy = {
     boundaryTitle: "Scope of service",
     boundary: "U Vision supports information organisation, issue analysis, option comparison, communication and action planning. We do not provide legal advice or representation in litigation. We do not guarantee outcomes or replace the professional advice or statutory work of lawyers, engineers, accountants, medical practitioners or other licensed professionals. Where appropriate, we will recommend seeking qualified professional support.",
     privacyTitle: "Privacy notice", privacyText: "Contact details you provide are used only to respond to your enquiry and arrange services. They will not be used for other marketing without consent. Please contact us first before submitting case documents through an appropriate channel.",
-    footerTagline: "See the essence with empathy. Move forward with foresight.", rights: "U Vision Consulting Limited. All rights reserved.",
+    footerTagline: "See Clearly · Know Your Options", rights: "U Vision Consulting Limited. All rights reserved.",
   },
 } as const;
 
@@ -183,14 +183,17 @@ export default function Home() {
         <div className="section-heading split-heading"><div><p className="kicker">{t.servicesKicker}</p><h2>{t.servicesTitle}</h2></div><p>{t.servicesIntro}</p></div>
         <div className="service-examples">
           <p className="examples-note">{e.note}</p>
-          <div className="examples-grid">{e.items.map(([title, situation, help], index) => (
-            <article className="example-card" key={title}>
+          <div className="examples-grid">{e.items.map(([title, situation, help], index) => {
+            const content = <>
               <h4>{title}</h4><p className="example-label">{e.situation}</p>
               <blockquote>{situation}</blockquote>
               <p className="example-label">{e.help}</p><p className="example-help">{help}</p>
-              {index === 0 && <a className="example-link" href={SEEPAGE_URL}>{t.seepageCta}<ArrowRight size={16}/></a>}
-            </article>
-          ))}</div>
+              {index === 0 && <span className="example-link">{t.seepageCta}<ArrowRight size={16}/></span>}
+            </>;
+            return index === 0
+              ? <a className="example-card example-card-link" href={SEEPAGE_URL} key={title}>{content}</a>
+              : <article className="example-card" key={title}>{content}</article>;
+          })}</div>
           <div className="examples-contact"><p>{e.prompt}</p><a className="button primary" href="#contact">{e.cta}<ArrowRight size={18}/></a></div>
         </div>
       </section>
@@ -245,7 +248,7 @@ export default function Home() {
       </div></section>
 
       <section className="section-shell boundaries"><article><h2>{t.boundaryTitle}</h2><p>{t.boundary}</p></article><article><h2>{t.privacyTitle}</h2><p>{t.privacyText}</p></article></section>
-      <footer><div className="section-shell footer-main"><img src={asset("assets/uvision-logo.webp")} alt="宇見顧問 U Vision Consulting"/><p>{t.footerTagline}</p></div><div className="section-shell footer-bottom"><span>© 2026 {t.rights}</span><span>uvisionconsulting@gmail.com</span></div></footer>
+      <footer><div className="section-shell footer-main"><img src={asset("uvision-horizontal.jpeg")} alt="宇見顧問有限公司 · U Vision Consultoria Limitada · U Vision Consulting Limited" width="920" height="324"/><p>{t.footerTagline}</p></div><div className="section-shell footer-bottom"><span>© 2026 {t.rights}</span><span>uvisionconsulting@gmail.com</span></div></footer>
     </main>
   );
 }

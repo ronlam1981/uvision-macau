@@ -86,3 +86,10 @@ section[id]{scroll-margin-top:150px}
 /* Keep the water-seepage detail link in the merged situation cards. */
 .example-link{display:inline-flex;align-items:center;gap:6px;margin-top:22px;font-size:15px;font-weight:700;color:var(--blue);text-decoration:none}
 .example-link:hover{text-decoration:underline}
+.example-card-link{display:block;color:inherit;transition:background .16s,border-color .16s}
+.example-card-link:hover{background:#e8f0f8;border-top-color:var(--navy)}
+.example-card-link:hover .example-link{text-decoration:underline}
+.example-card-link:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+/* Display all three registered company names in the footer logo. */
+.footer-main img{width:min(100%,320px);height:auto;object-fit:contain}
