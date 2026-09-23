@@ -212,7 +212,11 @@ export default function Home() {
         <div className="contact-info">
           <p className="kicker light">{t.contactKicker}</p><h2>{t.contactTitle}</h2><p className="contact-intro">{t.contactIntro}</p><h3>{t.direct}</h3>
           <div className="contact-links"><a href="https://wa.me/85366798555" target="_blank" rel="noreferrer"><MessageCircle size={20}/>WhatsApp · +853 6679 8555</a><a href="tel:+85366798555"><Phone size={20}/>+853 6679 8555</a><a href="mailto:uvisionconsulting@gmail.com"><Mail size={20}/>uvisionconsulting@gmail.com</a></div>
-          <p className="address">{t.address}</p><div className="social-links"><a href="https://www.facebook.com/uvisionmacau" target="_blank" rel="noreferrer">Facebook</a><a href="https://www.instagram.com/uvisionmacau/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.threads.com/@uvisionmacau" target="_blank" rel="noreferrer">Threads</a></div>
+          <div className="direct-wechat">
+            <div className="direct-wechat-text"><img src={asset("card-asset-2.svg")} alt="" width="22" height="22"/><div><strong>{lang === "zh" ? "微信 WeChat" : "WeChat"}</strong><p>{lang === "zh" ? "用電話號碼 +853 6679 8555 搜尋加入，或按 QR Code 放大掃描。" : "Find us by phone number +853 6679 8555, or open the QR code to scan and add us."}</p></div></div>
+            <a href={asset("uvision-wechat-qr.jpg")} target="_blank" rel="noreferrer" aria-label={lang === "zh" ? "開啟微信 QR Code 放大掃描" : "Open WeChat QR code to scan"}><img src={asset("uvision-wechat-qr.jpg")} alt={lang === "zh" ? "宇見微信加好友 QR Code" : "U Vision WeChat add-friend QR code"} width="1206" height="1536"/><span>{lang === "zh" ? "放大 QR Code" : "Open QR code"}</span></a>
+          </div>
+          <p className="address">{t.address}</p><div className="social-links"><a href="https://www.facebook.com/uvisionmacau" target="_blank" rel="noreferrer"><img src={asset("card-asset-3.svg")} alt="" width="20" height="20"/>Facebook</a><a href="https://www.instagram.com/uvisionmacau/" target="_blank" rel="noreferrer"><img src={asset("card-asset-4.svg")} alt="" width="20" height="20"/>Instagram</a><a href="https://www.threads.com/@uvisionmacau" target="_blank" rel="noreferrer"><img src={asset("card-asset-5.svg")} alt="" width="20" height="20"/>Threads</a></div>
         </div>
         <form className="enquiry-form" onSubmit={handleSubmit}>
           <label>{t.name}<input name="name" required placeholder={t.namePlaceholder}/></label>
