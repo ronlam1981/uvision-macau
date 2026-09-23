@@ -42,7 +42,7 @@ const examples = {
 const copy = {
   zh: {
     nav: ["創辦人", "我們如何協助", "服務流程", "聯絡我們"], navIds: ["founder", "services", "process", "contact"], language: "EN",
-    eyebrow: "由林宇滔創立", hero: "釐清問題　看清選項",
+    eyebrow: "由林宇滔創立", hero: "把複雜問題理清，\n讓下一步更清晰。",
     heroText: "憑藉創辦人林宇滔多年來參與處理數千個個案及事件的經驗，宇見協助個人、家庭、企業及機構理清各類問題、釐清事實、辨識風險及比較可行選項，更安心地選擇下一步，減少不必要的時間與金錢耗費，少走冤枉路。",
     consult: "查詢我們能否協助", learn: "了解服務", promiseTitle: "我們陪你看清，不替你作主",
     promise: "我們不承諾個案結果，也不以「關係」作賣點。宇見承諾的是有系統的方法、透明的判斷，以及清晰可行的下一步。",
@@ -79,7 +79,7 @@ const copy = {
   },
   en: {
     nav: ["Founder", "How we help", "Our process", "Contact"], navIds: ["founder", "services", "process", "contact"], language: "繁中",
-    eyebrow: "Founded by Ron Lam", hero: "See Clearly · Know Your Options",
+    eyebrow: "Founded by Ron Lam", hero: "Bring clarity to complex problems.\nSee your next step clearly.",
     heroText: "Drawing on founder Ron Lam’s years of experience helping handle thousands of cases and incidents, U Vision helps individuals, families, businesses and organisations clarify problems and facts, identify risks and compare practical options. Choose your next step with greater confidence, reduce unnecessary costs in time and money, and avoid needless detours.",
     consult: "Ask whether we can help", learn: "Explore our services", promiseTitle: "We help you see clearly. You remain in control.",
     promise: "We do not guarantee outcomes or sell access through connections. We commit to a structured method, transparent judgement and clear, practical next steps.",
