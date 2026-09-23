@@ -69,10 +69,20 @@ section[id]{scroll-margin-top:150px}
 @media(min-width:621px) and (max-width:900px){.hero{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}.founder-portrait{max-width:360px}}
 @media(max-width:620px){.founder-portrait{width:88%;max-width:330px}}
 
-/* 滲漏水個案：連往專屬落地頁 */
-a.service-item{text-decoration:none;color:inherit;transition:background .16s}
-a.service-item:hover{background:var(--mist)}
-a.service-item:hover .service-link-cta{text-decoration:underline}
-.service-link-cta{display:inline-flex;align-items:center;gap:6px;margin-top:13px;font-size:14px;font-weight:700;color:var(--blue)}
+/* One clear service section and a single process section with support options. */
+.service-examples{margin-top:0}
+.examples-grid>.example-card:last-child:nth-child(odd){grid-column:1/-1}
+.process-support{border-top:1px solid rgba(255,255,255,.22);margin-top:48px;padding-top:38px}
+.process-support .kicker{margin-bottom:10px}
+.support-intro{font-size:19px;line-height:1.7;color:#e5eef8;margin-bottom:22px}
+.support-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.support-grid article{border:1px solid rgba(255,255,255,.22);padding:23px 24px;background:rgba(255,255,255,.05)}
+.support-grid h3{font-size:18px;margin-bottom:9px}
+.support-grid p{font-size:14px;line-height:1.75;color:#c8d7e9;margin:0}
+.process-support .price-note{color:#e5eef8;margin-top:26px;font-size:14px}
+.process-support .price-note svg{color:#bcd0ea}
+@media(max-width:620px){.examples-grid>.example-card:last-child:nth-child(odd){grid-column:auto}.support-grid{grid-template-columns:1fr}.process-support{margin-top:36px}.support-intro{font-size:17px}}
+
+/* Keep the water-seepage detail link in the merged situation cards. */
 .example-link{display:inline-flex;align-items:center;gap:6px;margin-top:22px;font-size:15px;font-weight:700;color:var(--blue);text-decoration:none}
 .example-link:hover{text-decoration:underline}

@@ -1,7 +1,7 @@
 
 
 import { FormEvent, useState } from "react";
-import { ArrowRight, Building2, Check, ChevronRight, FileText, Mail, Menu, MessageCircle, Phone, ShieldCheck, Users, X } from "lucide-react";
+import { ArrowRight, Check, ChevronRight, Mail, Menu, MessageCircle, Phone, ShieldCheck, X } from "lucide-react";
 
 type Language = "zh" | "en";
 
@@ -10,7 +10,6 @@ const SEEPAGE_URL = "https://ronlam1981.github.io/water_leakage/consult.html";
 
 const examples = {
   zh: {
-    title: "遇到以下情況，宇見可以陪你理清下一步。",
     note: "以下為常見情境示例，並非已完成的客戶案例。",
     situation: "常見情境", help: "宇見可以怎樣幫",
     prompt: "唔肯定你嘅問題屬於邊一類？先同我哋講講。", cta: "查詢我們能否協助",
@@ -21,10 +20,10 @@ const examples = {
       ["企業與機構危機疑難應對", "客戶投訴放上網，員工、客戶同合作伙伴都追問，應該點回應？", "整理事實、辨識風險，規劃溝通次序及回應重點。"],
       ["政策講解與企業機構訂造培訓", "新政策同業務有關，但同事唔清楚有咩影響；前線遇到投訴，亦唔知點應對。", "按機構需要講解政策，結合工作情境，設計投訴處理、傳媒溝通或危機應對培訓。"],
       ["租務與合作爭議", "租客拖欠租金，承諾一拖再拖；又或者合作出現分歧，大家各執一詞。", "整理協議、付款及對話紀錄，找出爭議核心，比較協商及尋求專業協助等下一步。"],
+      ["其他生活及營運難題", "資料同說法太多，問題又未必屬於某一類，唔知應該由邊度開始。", "先了解處境與需要，整理關鍵資料，再判斷宇見能否協助及合適的下一步。"],
     ],
   },
   en: {
-    title: "Facing a situation like these? We can help clarify your next step.",
     note: "These are illustrative situations, not completed client cases.",
     situation: "Common situation", help: "How U Vision can help",
     prompt: "Not sure which category your issue fits? Tell us about it first.", cta: "Ask whether we can help",
@@ -35,28 +34,20 @@ const examples = {
       ["Business and organisational crisis response", "A customer has posted a complaint online. Staff, customers and partners are asking questions. How should we respond?", "Establish the facts, identify risks and plan the sequence and substance of communications."],
       ["Policy briefings and tailored training", "A new policy affects our work, but colleagues are unsure how. Frontline staff also need help handling complaints.", "Explain policies relevant to the organisation and design scenario-based training in complaint handling, media communication or crisis response."],
       ["Tenancy and partnership disputes", "My tenant keeps delaying overdue rent payments. Or a business partnership has run into disagreements, with conflicting accounts.", "Organise agreements, payment records and conversations, identify the core dispute, and compare next steps such as negotiation or seeking professional support."],
+      ["Other practical challenges", "There are many documents and differing accounts, and the issue does not fit neatly into one category. Where should I start?", "Understand the situation and needs, organise the key information, then determine whether U Vision can help and what the next step could be."],
     ],
   },
 } as const;
 
 const copy = {
   zh: {
-    nav: ["我們如何協助", "創辦人", "服務流程", "聯絡我們"], navIds: ["services", "founder", "process", "contact"], language: "EN",
-    eyebrow: "由林宇滔創立", hero: "把複雜問題理清，\n讓下一步更清晰。",
+    nav: ["創辦人", "我們如何協助", "服務流程", "聯絡我們"], navIds: ["founder", "services", "process", "contact"], language: "EN",
+    eyebrow: "由林宇滔創立", hero: "釐清問題　看清選項",
     heroText: "憑藉創辦人林宇滔多年來參與處理數千個個案及事件的經驗，宇見協助個人、家庭、企業及機構理清各類問題、釐清事實、辨識風險及比較可行選項，更安心地選擇下一步，減少不必要的時間與金錢耗費，少走冤枉路。",
     consult: "查詢我們能否協助", learn: "了解服務", promiseTitle: "我們陪你看清，不替你作主",
     promise: "我們不承諾個案結果，也不以「關係」作賣點。宇見承諾的是有系統的方法、透明的判斷，以及清晰可行的下一步。",
-    servicesKicker: "我們如何協助", servicesTitle: "當資料零散、說法不一，\n先把問題看清楚。",
-    servicesIntro: "以下是常見的協助範圍。每個個案的情況不同，宇見會先了解事實，再說明可提供的支援。",
-    serviceItems: [
-      ["滲漏水問題", "整理滲水紀錄、各方說法及待查問題，規劃檢測、溝通及跟進次序。"],
-      ["分析樓宇管理糾紛", "梳理管理、維修及會議資料，釐清爭議重點，比較可行處理方向。"],
-      ["政府信件與程序理解", "把正式文件轉化成容易理解的重點、期限及下一步。"],
-      ["企業與機構危機疑難應對", "整理事實、辨識風險，規劃溝通次序及回應重點。"],
-      ["政策講解與企業機構訂造培訓", "剖析公共政策，訂定針對性培訓內容。"],
-      ["租務與合作爭議", "釐清文件、時間線、責任主張及協商選項。"],
-      ["其他生活及營運難題", "問題未必有現成分類；先談清楚，再判斷如何處理。"],
-    ],
+    servicesKicker: "我們如何協助", servicesTitle: "遇到以下情況，\n宇見可以陪你理清下一步。",
+    servicesIntro: "當資料零散、說法不一，我們先幫你看清問題，再按情況說明可提供的支援。",
     processKicker: "服務流程", processTitle: "從混亂，到清晰可行。",
     steps: [
       ["01", "整理資料", "把文件、說法、事件和時間線放回正確位置。"],
@@ -64,7 +55,7 @@ const copy = {
       ["03", "評估選項及風險", "比較各方案的成本、時間、代價及後續影響。"],
       ["04", "制定下一步", "形成具體次序、溝通重點、文件清單及檢查節點。"],
     ],
-    waysKicker: "服務方式", waysTitle: "按問題需要，提供合適深度的支援。",
+    waysKicker: "支援方式", waysTitle: "按問題需要，可由初步了解、個案分析，到持續支援。",
     ways: [["初步了解", "了解問題、整理重點，判斷下一步應由誰處理。"], ["個案分析", "根據已提供資料，拆解問題、選項、風險及行動次序。"], ["持續支援", "就複雜個案協助跟進資料、會議、溝通及進度節點。"]],
     price: "服務範圍及收費會在了解個案後說明；開始工作前，會先確認內容及安排。",
     seepageCta: "滲漏水？睇下我哋點幫你理清",
@@ -74,8 +65,6 @@ const copy = {
       "從資料梳理、事實查證、政策分析，到面對不同立場的當事人，他重視先聆聽、釐清事實，再找出問題核心。",
       "創立宇見顧問，是希望把這些經驗轉化為居民、企業及機構可使用的實務支援：整理混亂資訊、辨識風險、比較選項，讓客戶清楚選擇下一步，不用鑽牛角尖，也不用走冤枉路。",
     ],
-    resourcesKicker: "實用資料", resourcesTitle: "把複雜知識，整理成隨時用得上的內容。",
-    resources: [["宇見一頁", "用一頁看懂一個問題的重點與處理次序。", "籌備中"], ["宇見一本", "以簡明小冊整理常見問題、步驟與參考來源。", "籌備中"]],
     contactKicker: "聯絡我們", contactTitle: "先把問題說清楚，\n再一起找下一步。",
     contactIntro: "你可以直接聯絡我們，或填寫三項基本資料，再前往 WhatsApp 確認發送。",
     name: "姓名", namePlaceholder: "如何稱呼你", method: "聯絡方式", methodPlaceholder: "電話、WhatsApp 或電郵", category: "問題類別", select: "請選擇",
@@ -89,23 +78,13 @@ const copy = {
     footerTagline: "以同理看見本質，以遠見引向未來。", rights: "宇見顧問有限公司。保留所有權利。",
   },
   en: {
-    nav: ["How we help", "Founder", "Our process", "Contact"], navIds: ["services", "founder", "process", "contact"], language: "繁中",
-    eyebrow: "Founded by Ron Lam", hero: "Bring clarity to complex problems.\nSee your next step clearly.",
+    nav: ["Founder", "How we help", "Our process", "Contact"], navIds: ["founder", "services", "process", "contact"], language: "繁中",
+    eyebrow: "Founded by Ron Lam", hero: "See Clearly · Know Your Options",
     heroText: "Drawing on founder Ron Lam’s years of experience helping handle thousands of cases and incidents, U Vision helps individuals, families, businesses and organisations clarify problems and facts, identify risks and compare practical options. Choose your next step with greater confidence, reduce unnecessary costs in time and money, and avoid needless detours.",
     consult: "Ask whether we can help", learn: "Explore our services", promiseTitle: "We help you see clearly. You remain in control.",
     promise: "We do not guarantee outcomes or sell access through connections. We commit to a structured method, transparent judgement and clear, practical next steps.",
-    servicesKicker: "How we help", servicesTitle: "When facts are scattered and accounts conflict,\nclarity comes first.",
-    servicesIntro: "These are common areas in which we assist. Every case is different; we first understand the facts, then explain the support we can provide.",
-    serviceItems: [
-      ["Water seepage", "Organise seepage records, stakeholder accounts and unanswered questions, then plan inspections, communication and follow-up."],
-      ["Building management dispute analysis", "Review management, repair and meeting records, clarify disputed issues and compare practical ways forward."],
-      ["Government letters & procedures", "Turn formal documents into understandable priorities, deadlines and next steps."],
-      ["Crisis & complex-issue response for businesses and organisations", "Establish the facts, identify risks and plan the sequence and substance of communications."],
-      ["Policy briefings & tailored training for businesses and organisations", "Analyse public policy and develop targeted training content."],
-      ["Tenancy & partnership disputes", "Clarify documents, timelines, competing claims and negotiation options."],
-      ["Other practical challenges", "Not every problem fits a category. We first clarify it, then determine the right way forward."],
-    ],
-    seepageCta: "Water seepage? See how we help you get clarity",
+    servicesKicker: "How we help", servicesTitle: "Facing situations like these?\nWe can help clarify your next step.",
+    servicesIntro: "When information is scattered and accounts conflict, we help clarify the issue first, then explain the support we can provide.",
     processKicker: "Our process", processTitle: "From confusion to a clear, workable plan.",
     steps: [
       ["01", "Organise information", "Put documents, accounts, events and timelines in the right order."],
@@ -113,17 +92,16 @@ const copy = {
       ["03", "Assess options and risks", "Compare cost, time, trade-offs and downstream effects."],
       ["04", "Set the next steps", "Define priorities, key messages, document lists and review points."],
     ],
-    waysKicker: "Ways to work with us", waysTitle: "The right depth of support for the issue at hand.",
+    waysKicker: "Support options", waysTitle: "Depending on the issue, support may range from an initial discussion to case analysis or ongoing support.",
     ways: [["Initial discussion", "Understand the issue, identify priorities and decide who should handle the next step."], ["Case analysis", "Review the available information and set out issues, options, risks and priorities."], ["Ongoing support", "Support complex cases through information review, meetings, communications and progress checks."]],
     price: "Scope and fees are explained after we understand the case. The work and arrangement will be confirmed before we begin.",
+    seepageCta: "Water seepage? See how we help you get clarity",
     founderSummary: ["From journalism and public-issue analysis to helping residents and organisations navigate difficult situations, Ron Lam starts by listening, checking the facts and identifying the core issue.", "He founded U Vision to turn that experience into structured, practical support, helping clients understand their situation, compare options and choose their next step."], founderMore: "About our founder and approach", founderCaption: "Ron Lam | Founder, U Vision Consulting", founderKicker: "Founder", founderTitle: "Founded by Ron Lam,\nturning experience into clear next steps.",
     founderParas: [
       "Ron Lam is a former journalist and television presenter with experience in current-affairs commentary and column writing. He has also served as a trainer in public policy, media communication and crisis management. Before founding U Vision, he followed public policy and community issues in Macao and helped residents, organisations and community groups organise, coordinate and resolve thousands of cases, developing a deep and distinctive understanding of local issues.",
       "Whether organising information, verifying facts, analysing policy or working with people who hold different positions, he begins by listening, clarifying the facts and identifying the heart of the problem.",
       "He founded U Vision to turn this experience into practical support for individuals, businesses and organisations: bringing order to complex information, identifying risks and comparing options, so clients can choose their next step clearly without getting stuck or taking avoidable detours.",
     ],
-    resourcesKicker: "Practical resources", resourcesTitle: "Complex knowledge, organised for practical use.",
-    resources: [["U Vision: One Page", "The essentials and action sequence for one issue, on one page.", "In preparation"], ["U Vision: One Book", "Concise guides to common issues, practical steps and reference sources.", "In preparation"]],
     contactKicker: "Contact us", contactTitle: "Clarify the issue first.\nThen find the next step together.",
     contactIntro: "Contact us directly, or provide three basic details before continuing to WhatsApp to confirm and send.",
     name: "Name", namePlaceholder: "How should we address you?", method: "Contact details", methodPlaceholder: "Phone, WhatsApp or email", category: "Type of issue", select: "Please select",
@@ -203,18 +181,7 @@ export default function Home() {
 
       <section id="services" className="section-shell content-section">
         <div className="section-heading split-heading"><div><p className="kicker">{t.servicesKicker}</p><h2>{t.servicesTitle}</h2></div><p>{t.servicesIntro}</p></div>
-        <div className="service-grid">
-          {t.serviceItems.map(([title, text], index) => {
-            const icons = [Building2, Building2, FileText, MessageCircle, Users, FileText, ChevronRight]; const Icon = icons[index];
-            const seepage = index === 0;
-            const inner = <><Icon size={24}/><div><h3>{title}</h3><p>{text}</p>{seepage && <span className="service-link-cta">{t.seepageCta}<ArrowRight size={15}/></span>}</div></>;
-            return seepage
-              ? <a className="service-item service-item-link" href={SEEPAGE_URL} key={title}>{inner}</a>
-              : <article className="service-item" key={title}>{inner}</article>;
-          })}
-        </div>
         <div className="service-examples">
-          <h3 className="examples-heading">{e.title}</h3>
           <p className="examples-note">{e.note}</p>
           <div className="examples-grid">{e.items.map(([title, situation, help], index) => (
             <article className="example-card" key={title}>
@@ -231,20 +198,12 @@ export default function Home() {
       <section id="process" className="process-section"><div className="section-shell">
         <div className="section-heading"><p className="kicker light">{t.processKicker}</p><h2>{t.processTitle}</h2></div>
         <div className="steps-grid">{t.steps.map(([number, title, text]) => <article className="step" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+        <div className="process-support">
+          <p className="kicker light">{t.waysKicker}</p><p className="support-intro">{t.waysTitle}</p>
+          <div className="support-grid">{t.ways.map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
+          <p className="price-note"><Check size={18}/>{t.price}</p>
+        </div>
       </div></section>
-
-      <section className="section-shell content-section ways-section">
-        <div className="section-heading"><p className="kicker">{t.waysKicker}</p><h2>{t.waysTitle}</h2></div>
-        <div className="ways-grid">{t.ways.map(([title, text], index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
-        <p className="price-note"><Check size={18}/>{t.price}</p>
-      </section>
-
-
-
-      <section className="section-shell content-section resources-section">
-        <div className="section-heading split-heading"><div><p className="kicker">{t.resourcesKicker}</p><h2>{t.resourcesTitle}</h2></div></div>
-        <div className="resource-grid">{t.resources.map(([title, text, status]) => <article key={title}><div><span>{status}</span><h3>{title}</h3><p>{text}</p></div><ArrowRight size={22}/></article>)}</div>
-      </section>
 
       <section id="contact" className="contact-section"><div className="section-shell contact-grid">
         <div className="contact-info">
