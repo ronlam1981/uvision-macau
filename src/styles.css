@@ -38,6 +38,14 @@
 @media(max-width:900px){.site-header{height:126px}.brand img{width:300px;height:auto}.mobile-nav{top:126px}.official-hero-logo{max-width:420px;margin:auto}.platforms{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.site-header{height:auto;min-height:140px;flex-wrap:wrap;justify-content:space-between;gap:0;padding-block:8px}.brand{flex-basis:100%;margin:0}.brand img{width:min(320px,100%);height:auto;margin:auto}.header-actions{margin-left:auto}.mobile-nav{top:100%}.platforms{grid-template-columns:1fr}.contact-grid{grid-template-columns:minmax(0,1fr)}}
 .wechat-contact{scroll-margin-top:180px}
+.direct-wechat{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:22px;padding:16px;border:1px solid rgba(255,255,255,.25)}
+.direct-wechat-text{display:flex;align-items:flex-start;gap:11px;min-width:0}
+.direct-wechat-text>img{flex:none;background:#fff;border-radius:50%;padding:3px;width:26px;height:26px}
+.direct-wechat strong{font-size:15px}.direct-wechat p{font-size:14px;line-height:1.6;color:#dce7f4;margin:5px 0 0}
+.direct-wechat>a{display:flex;flex-direction:column;align-items:center;gap:5px;flex:none;font-size:12px;text-align:center;color:#dce7f4}
+.direct-wechat>a img{display:block;width:82px;height:82px;object-fit:cover;object-position:center 56%;background:#fff}
+.social-links{flex-wrap:wrap;gap:12px 20px}.social-links a{display:inline-flex;align-items:center;gap:7px}.social-links img{width:22px;height:22px;padding:3px;background:#fff;border-radius:50%}
+@media(max-width:620px){.direct-wechat{gap:10px}.direct-wechat>a img{width:70px;height:70px}}
 .wechat-link{color:var(--navy);text-decoration:underline;font-weight:700}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
