@@ -68,3 +68,11 @@ section[id]{scroll-margin-top:150px}
 @media(min-width:901px){.hero{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px}.founder-portrait{max-width:470px;align-self:center}.hero h1{font-size:clamp(36px,4vw,54px)}}
 @media(min-width:621px) and (max-width:900px){.hero{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}.founder-portrait{max-width:360px}}
 @media(max-width:620px){.founder-portrait{width:88%;max-width:330px}}
+
+/* 滲漏水個案：連往專屬落地頁 */
+a.service-item{text-decoration:none;color:inherit;transition:background .16s}
+a.service-item:hover{background:var(--mist)}
+a.service-item:hover .service-link-cta{text-decoration:underline}
+.service-link-cta{display:inline-flex;align-items:center;gap:6px;margin-top:13px;font-size:14px;font-weight:700;color:var(--blue)}
+.example-link{display:inline-flex;align-items:center;gap:6px;margin-top:22px;font-size:15px;font-weight:700;color:var(--blue);text-decoration:none}
+.example-link:hover{text-decoration:underline}

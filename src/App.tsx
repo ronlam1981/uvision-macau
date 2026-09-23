@@ -5,6 +5,9 @@ import { ArrowRight, Building2, Check, ChevronRight, FileText, Mail, Menu, Messa
 
 type Language = "zh" | "en";
 
+/* 滲漏水個案的專屬落地頁（另一倉庫 water_leakage，同樣由 GitHub Pages 託管）。 */
+const SEEPAGE_URL = "https://ronlam1981.github.io/water_leakage/consult.html";
+
 const examples = {
   zh: {
     title: "遇到以下情況，宇見可以陪你理清下一步。",
@@ -64,6 +67,7 @@ const copy = {
     waysKicker: "服務方式", waysTitle: "按問題需要，提供合適深度的支援。",
     ways: [["初步了解", "了解問題、整理重點，判斷下一步應由誰處理。"], ["個案分析", "根據已提供資料，拆解問題、選項、風險及行動次序。"], ["持續支援", "就複雜個案協助跟進資料、會議、溝通及進度節點。"]],
     price: "服務範圍及收費會在了解個案後說明；開始工作前，會先確認內容及安排。",
+    seepageCta: "滲漏水？睇下我哋點幫你理清",
     founderSummary: ["從新聞採訪、公共議題分析，到協助居民及機構梳理疑難，林宇滔一直重視先聆聽、查證，再找出問題核心。", "創立宇見，是希望把這些經驗轉化為有步驟、有重點的實務支援，陪伴客戶理解處境、比較選項，選擇下一步。"], founderMore: "了解創辦人與宇見理念", founderCaption: "林宇滔｜宇見顧問創辦人", founderKicker: "創辦人", founderTitle: "由林宇滔創立，\n把經驗化為清晰的下一步。",
     founderParas: [
       "林宇滔曾任記者、節目主持，具時事評論及專欄寫作經驗，亦曾擔任公共政策、傳媒溝通及危機管理的培訓導師。在創立宇見前，他長期關注澳門公共政策及各類民生議題，曾協助居民、機構及團體梳理、協調及解決數千個個案，對澳門問題有深入而獨到的見解。",
@@ -101,6 +105,7 @@ const copy = {
       ["Tenancy & partnership disputes", "Clarify documents, timelines, competing claims and negotiation options."],
       ["Other practical challenges", "Not every problem fits a category. We first clarify it, then determine the right way forward."],
     ],
+    seepageCta: "Water seepage? See how we help you get clarity",
     processKicker: "Our process", processTitle: "From confusion to a clear, workable plan.",
     steps: [
       ["01", "Organise information", "Put documents, accounts, events and timelines in the right order."],
@@ -201,17 +206,22 @@ export default function Home() {
         <div className="service-grid">
           {t.serviceItems.map(([title, text], index) => {
             const icons = [Building2, Building2, FileText, MessageCircle, Users, FileText, ChevronRight]; const Icon = icons[index];
-            return <article className="service-item" key={title}><Icon size={24}/><div><h3>{title}</h3><p>{text}</p></div></article>;
+            const seepage = index === 0;
+            const inner = <><Icon size={24}/><div><h3>{title}</h3><p>{text}</p>{seepage && <span className="service-link-cta">{t.seepageCta}<ArrowRight size={15}/></span>}</div></>;
+            return seepage
+              ? <a className="service-item service-item-link" href={SEEPAGE_URL} key={title}>{inner}</a>
+              : <article className="service-item" key={title}>{inner}</article>;
           })}
         </div>
         <div className="service-examples">
           <h3 className="examples-heading">{e.title}</h3>
           <p className="examples-note">{e.note}</p>
-          <div className="examples-grid">{e.items.map(([title, situation, help]) => (
+          <div className="examples-grid">{e.items.map(([title, situation, help], index) => (
             <article className="example-card" key={title}>
               <h4>{title}</h4><p className="example-label">{e.situation}</p>
               <blockquote>{situation}</blockquote>
               <p className="example-label">{e.help}</p><p className="example-help">{help}</p>
+              {index === 0 && <a className="example-link" href={SEEPAGE_URL}>{t.seepageCta}<ArrowRight size={16}/></a>}
             </article>
           ))}</div>
           <div className="examples-contact"><p>{e.prompt}</p><a className="button primary" href="#contact">{e.cta}<ArrowRight size={18}/></a></div>
