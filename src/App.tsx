@@ -5,8 +5,8 @@ import { ArrowRight, Check, ChevronRight, Mail, Menu, MessageCircle, Phone, Shie
 
 type Language = "zh" | "en";
 
-/* 滲漏水個案的專屬落地頁（另一倉庫 water_leakage，同樣由 GitHub Pages 託管）。 */
-const SEEPAGE_URL = "https://ronlam1981.github.io/water_leakage/consult.html";
+/* 滲漏水個案的專屬落地頁，靜態檔放在 public/leak/，與本站同一域名。 */
+const SEEPAGE_URL = "leak/consult.html";
 
 const examples = {
   zh: {
