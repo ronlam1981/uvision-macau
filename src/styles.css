@@ -46,6 +46,8 @@
 .direct-wechat>a img{display:block;width:82px;height:82px;object-fit:cover;object-position:center 56%;background:#fff}
 .social-links{flex-wrap:wrap;gap:12px 20px}.social-links a{display:inline-flex;align-items:center;gap:7px}.social-links img{width:22px;height:22px;padding:3px;background:#fff;border-radius:50%}
 .social-label{display:inline-flex;align-items:center}
+.contact-links img,.contact-links svg{flex:none;width:22px;height:22px;padding:3px;background:#fff;border-radius:50%}
+.contact-links .phone-icon{color:#148ad4}.contact-links .email-icon{color:#e34c43}
 @media(max-width:620px){.direct-wechat{gap:10px}.direct-wechat>a img{width:70px;height:70px}}
 .wechat-link{color:var(--navy);text-decoration:underline;font-weight:700}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
