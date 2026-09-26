@@ -216,7 +216,7 @@ export default function Home() {
             <div className="direct-wechat-text"><img src={asset("card-asset-2.svg")} alt="" width="22" height="22"/><div><strong>{lang === "zh" ? "微信 WeChat" : "WeChat"}</strong><p>{lang === "zh" ? "用電話號碼 +853 6679 8555 搜尋加入，或按 QR Code 放大掃描。" : "Find us by phone number +853 6679 8555, or open the QR code to scan and add us."}</p></div></div>
             <a href={asset("uvision-wechat-qr.jpg")} target="_blank" rel="noreferrer" aria-label={lang === "zh" ? "開啟微信 QR Code 放大掃描" : "Open WeChat QR code to scan"}><img src={asset("uvision-wechat-qr.jpg")} alt={lang === "zh" ? "宇見微信加好友 QR Code" : "U Vision WeChat add-friend QR code"} width="1206" height="1536"/><span>{lang === "zh" ? "放大 QR Code" : "Open QR code"}</span></a>
           </div>
-          <p className="address">{t.address}</p><div className="social-links"><a href="https://www.facebook.com/uvisionmacau" target="_blank" rel="noreferrer"><img src={asset("card-asset-3.svg")} alt="" width="20" height="20"/>Facebook</a><a href="https://www.instagram.com/uvisionmacau/" target="_blank" rel="noreferrer"><img src={asset("card-asset-4.svg")} alt="" width="20" height="20"/>Instagram</a><a href="https://www.threads.com/@uvisionmacau" target="_blank" rel="noreferrer"><img src={asset("card-asset-5.svg")} alt="" width="20" height="20"/>Threads</a></div>
+          <p className="address">{t.address}</p><div className="social-links"><span className="social-label">{lang === "zh" ? "宇見社交媒體：" : "U Vision social media:"}</span><a href="https://www.facebook.com/uvisionmacau" target="_blank" rel="noreferrer"><img src={asset("card-asset-3.svg")} alt="" width="20" height="20"/>Facebook</a><a href="https://www.instagram.com/uvisionmacau/" target="_blank" rel="noreferrer"><img src={asset("card-asset-4.svg")} alt="" width="20" height="20"/>Instagram</a><a href="https://www.threads.com/@uvisionmacau" target="_blank" rel="noreferrer"><img src={asset("card-asset-5.svg")} alt="" width="20" height="20"/>Threads</a></div>
         </div>
         <form className="enquiry-form" onSubmit={handleSubmit}>
           <label>{t.name}<input name="name" required placeholder={t.namePlaceholder}/></label>
@@ -226,29 +226,8 @@ export default function Home() {
           <button type="submit" name="action" value="copy" className="button secondary full copy-enquiry">{lang === "zh" ? "複製查詢內容（微信／其他平台）" : "Copy enquiry for WeChat / other platforms"}</button>
           <p className="copy-status" role="status">{copyStatus}</p>
           {manualCopy && <textarea aria-label={lang === "zh" ? "手動複製查詢內容" : "Enquiry to copy manually"} readOnly rows={5} value={manualCopy} onFocus={(e) => e.currentTarget.select()} />}
-          <p className="wechat-note">{lang === "zh" ? "微信查詢：複製內容後，掃描下方宇見 U Vision 的正式 QR Code，加為好友，再貼上發送。" : "For WeChat enquiries, copy your message, scan the official U Vision QR code below, add us as a friend, then paste and send."} <a href="#wechat" className="wechat-link">{lang === "zh" ? "查看微信 QR Code" : "View WeChat QR code"}</a></p>
+          <p className="wechat-note">{lang === "zh" ? "微信查詢：複製內容後，使用「直接聯絡」的微信 QR Code 加為好友，再貼上發送。" : "For WeChat enquiries, copy your message, use the WeChat QR code under Contact directly to add us as a friend, then paste and send."} <a href={asset("uvision-wechat-qr.jpg")} target="_blank" rel="noreferrer" className="wechat-link">{lang === "zh" ? "查看微信 QR Code" : "View WeChat QR code"}</a></p>
         </form>
-        <section className="platforms" aria-label={lang === "zh" ? "社交平台及 QR Code" : "Social channels and QR codes"}>
-          {[
-            {name:"WhatsApp",account:"+853 6679 8555",url:"https://wa.me/85366798555",icon:1,qr:8},
-            {name:"Facebook",account:"@uvisionmacau",url:"https://www.facebook.com/uvisionmacau",icon:3,qr:10},
-            {name:"Instagram",account:"@uvisionmacau",url:"https://www.instagram.com/uvisionmacau/",icon:4,qr:12},
-            {name:"Threads",account:"@uvisionmacau",url:"https://www.threads.com/@uvisionmacau",icon:5,qr:14},
-          ].map((platform) => <article className="platform-card" key={platform.name}>
-            <h3><img className="platform-icon" src={asset(`card-asset-${platform.icon}.svg`)} alt="" />{platform.name}</h3>
-            <p>{platform.account}</p>
-            <a href={platform.url} target="_blank" rel="noreferrer" aria-label={`${platform.name} ${platform.account}`}><img className="platform-qr" src={asset(`card-asset-${platform.qr}.png`)} alt={`${platform.name} QR Code`} width="980" height="980" /></a>
-            <a className="platform-open" href={platform.url} target="_blank" rel="noreferrer">{lang === "zh" ? "開啟" : "Open"} {platform.name}<ArrowRight size={16}/></a>
-          </article>)}
-          <article id="wechat" className="platform-card wechat-contact">
-            <h3><img className="platform-icon" src={asset("card-asset-2.svg")} alt="" />WeChat {lang === "zh" ? "微信" : ""}</h3>
-            <p>U Vision · {lang === "zh" ? "宇見顧問" : "U Vision Consulting"}</p>
-            <a href={asset("uvision-wechat-qr.jpg")} target="_blank" rel="noreferrer" aria-label={lang === "zh" ? "放大宇見微信加好友 QR Code" : "Enlarge the U Vision WeChat add-friend QR code"}><img className="platform-qr" src={asset("uvision-wechat-qr.jpg")} alt={lang === "zh" ? "宇見 U Vision 微信正式加好友 QR Code" : "Official U Vision WeChat add-friend QR code"} width="1206" height="1536" /></a>
-            <a className="platform-open" href={asset("uvision-wechat-qr.jpg")} target="_blank" rel="noreferrer">{lang === "zh" ? "放大 QR Code" : "Enlarge QR code"}<ArrowRight size={16}/></a>
-            <a className="platform-open" href={asset("uvision-wechat-qr.jpg")} download="U-Vision-WeChat.jpg">{lang === "zh" ? "儲存微信 QR Code" : "Save WeChat QR code"}</a>
-            <p>{lang === "zh" ? "電腦用戶可用微信掃描；手機用戶可先儲存圖片，再在微信「掃一掃」從相簿選取。加為好友後，貼上查詢內容並自行發送。" : "On a computer, scan with WeChat. On a phone, save the image and select it from your album in WeChat Scan. Add us as a friend, then paste and send your enquiry."}</p>
-          </article>
-        </section>
       </div></section>
 
       <section className="section-shell boundaries"><article><h2>{t.boundaryTitle}</h2><p>{t.boundary}</p></article><article><h2>{t.privacyTitle}</h2><p>{t.privacyText}</p></article></section>
