@@ -1,6 +1,6 @@
 
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { ArrowRight, Check, ChevronRight, Mail, Menu, Phone, ShieldCheck, X } from "lucide-react";
 
 type Language = "zh" | "en";
@@ -11,7 +11,6 @@ const VIABILITY_URL = "business/consult.html";
 
 const examples = {
   zh: {
-    note: "以下為常見情境示例，並非已完成的客戶案例。",
     situation: "常見情境", help: "宇見可以怎樣幫",
     prompt: "唔肯定你嘅問題屬於邊一類？先同我哋講講。", cta: "查詢我們能否協助",
     items: [
@@ -25,7 +24,6 @@ const examples = {
     ],
   },
   en: {
-    note: "These are illustrative situations, not completed client cases.",
     situation: "Common situation", help: "How U Vision can help",
     prompt: "Not sure which category your issue fits? Tell us about it first.", cta: "Ask whether we can help",
     items: [
@@ -70,7 +68,7 @@ const copy = {
     contactKicker: "聯絡我們", contactTitle: "先把問題說清楚，\n再一起找下一步。",
     contactIntro: "你可以直接聯絡我們，或填寫三項基本資料，再前往 WhatsApp 確認發送。",
     name: "姓名", namePlaceholder: "如何稱呼你", method: "聯絡方式", methodPlaceholder: "電話、WhatsApp 或電郵", category: "問題類別", select: "請選擇",
-    categories: ["滲漏水／樓宇管理", "經營規則／項目可行性", "租務糾紛", "政府信件理解", "投訴／危機應對", "合作爭議", "政策講解／訂造培訓", "其他"],
+    categories: ["滲漏水問題", "分析樓宇管理糾紛", "經營規則與項目可行性分析", "公關危機應對避坑", "訂造培訓與政策講解", "政府信件及程序剖析", "其他生活及營運難題"],
     privacy: "只需提供基本聯絡資料。請勿在此提交身份證、合約、相片或其他個案文件。",
     send: "前往 WhatsApp 確認發送", unsent: "資料尚未送出，請在通訊軟件內完成發送。", direct: "直接聯絡",
     address: "澳門桔仔街65號一樓（到訪請提前預約）", qr: "掃描 QR Code 開啟 WhatsApp",
@@ -108,7 +106,7 @@ const copy = {
     contactKicker: "Contact us", contactTitle: "Clarify the issue first.\nThen find the next step together.",
     contactIntro: "Contact us directly, or provide three basic details before continuing to WhatsApp to confirm and send.",
     name: "Name", namePlaceholder: "How should we address you?", method: "Contact details", methodPlaceholder: "Phone, WhatsApp or email", category: "Type of issue", select: "Please select",
-    categories: ["Water seepage / building management", "Business rules / project feasibility", "Tenancy dispute", "Government letter", "Complaint / crisis response", "Partnership dispute", "Policy briefing / tailored training", "Other"],
+    categories: ["Water seepage", "Building management dispute analysis", "Business rules and project feasibility", "Public relations crisis response and pitfalls", "Tailored training and policy briefings", "Government letters and procedure analysis", "Other practical challenges"],
     privacy: "Basic contact details only. Do not submit identity documents, contracts, photos or case files here.",
     send: "Continue to WhatsApp", unsent: "Nothing has been sent yet. Please complete sending in the messaging app.", direct: "Contact directly",
     address: "1/F, No. 65 Rua dos Cules, Macao (visits by appointment)", qr: "Scan to open WhatsApp",
@@ -120,13 +118,23 @@ const copy = {
 } as const;
 
 export default function Home() {
-  const [lang, setLang] = useState<Language>("zh");
+  const [lang, setLang] = useState<Language>(() => new URLSearchParams(window.location.search).get("lang") === "en" ? "en" : "zh");
   const [menuOpen, setMenuOpen] = useState(false);
   const [copyStatus, setCopyStatus] = useState("");
   const [manualCopy, setManualCopy] = useState("");
   const t = copy[lang];
   const e = examples[lang];
   const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
+  useEffect(() => { document.documentElement.lang = lang === "en" ? "en" : "zh-Hant-MO"; }, [lang]);
+  function switchLanguage() {
+    const next = lang === "zh" ? "en" : "zh";
+    const url = new URL(window.location.href);
+    if (next === "en") url.searchParams.set("lang", "en");
+    else url.searchParams.delete("lang");
+    window.history.replaceState(null, "", url);
+    setLang(next);
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -158,12 +166,14 @@ export default function Home() {
           {t.nav.map((item, index) => <a key={item} href={`#${t.navIds[index]}`}>{item}</a>)}
         </nav>
         <div className="header-actions">
-          <button className="lang-button" onClick={() => setLang(lang === "zh" ? "en" : "zh")}>{t.language}</button>
+          <button className="lang-button" type="button" onClick={switchLanguage}>{t.language}</button>
           <a href="#contact" className="header-cta">{t.consult}</a>
           <button className="menu-button" aria-label="Menu" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={22} /> : <Menu size={22} />}</button>
         </div>
         {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">{t.nav.map((item, index) => <a key={item} href={`#${t.navIds[index]}`} onClick={() => setMenuOpen(false)}>{item}<ChevronRight size={17}/></a>)}</nav>}
       </header>
+
+      <nav className="home-breadcrumbs section-shell" aria-label={lang === "zh" ? "目前位置" : "You are here"}><span aria-current="page">{lang === "zh" ? "首頁" : "Home"}</span></nav>
 
       <section id="top" className="hero section-shell">
         <div className="hero-copy">
@@ -185,7 +195,6 @@ export default function Home() {
       <section id="services" className="section-shell content-section">
         <div className="section-heading split-heading"><div><p className="kicker">{t.servicesKicker}</p><h2>{t.servicesTitle}</h2></div><p>{t.servicesIntro}</p></div>
         <div className="service-examples">
-          <p className="examples-note">{e.note}</p>
           <div className="examples-grid">{e.items.map(([title, situation, help], index) => {
             const content = <>
               <h4>{title}</h4><p className="example-label">{e.situation}</p>

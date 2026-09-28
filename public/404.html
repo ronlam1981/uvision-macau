@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site-nav.css">
+<script src="/site-nav.js" defer></script>
 <style>
   :root{
     --uv-blue:#385890; --deep-navy:#183C70; --vision-mid:#6F8FB8;
@@ -17,12 +19,11 @@
   }
   *{box-sizing:border-box}
   body{
-    margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
-    padding:32px 24px;background:var(--mist);color:var(--ink);
+    margin:0;min-height:100vh;background:var(--mist);color:var(--ink);
     font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
     font-size:17px;line-height:1.7;
   }
-  .box{width:100%;max-width:34em}
+  .box{width:calc(100% - 48px);max-width:34em;margin:72px auto 90px}
   .code{
     font-family:Montserrat,Arial,sans-serif;font-size:13px;font-weight:500;
     letter-spacing:.14em;color:var(--vision-mid);margin:0 0 14px;
@@ -50,6 +51,12 @@
 </style>
 </head>
 <body>
+  <header class="uv-header"><div class="uv-header-inner">
+    <a class="uv-header-logo" href="/#top" aria-label="宇見顧問首頁"><img src="/uvision-logo-h.svg" alt="宇見顧問有限公司 U Vision Consulting Limited" width="1613" height="529"></a>
+    <nav class="uv-desktop-nav" aria-label="主要導覽"><a href="/#founder">創辦人</a><a href="/#services">我們如何協助</a><a href="/#process">服務流程</a><a href="/#contact">聯絡我們</a></nav>
+    <div class="uv-header-actions"><a class="uv-lang" href="/?lang=en" lang="en" aria-label="English homepage">EN</a><a class="uv-header-cta" href="/#contact">查詢我們能否協助</a><button class="uv-menu" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="uv-mobile-nav">☰</button></div>
+  </div><nav class="uv-mobile-nav" id="uv-mobile-nav" aria-label="手機導覽" hidden><a href="/#founder">創辦人</a><a href="/#services">我們如何協助</a><a href="/#process">服務流程</a><a href="/#contact">聯絡我們</a></nav></header>
+  <nav class="uv-breadcrumbs" aria-label="目前位置"><div class="uv-trail"><a href="/">首頁</a><span class="uv-separator" aria-hidden="true">›</span><span aria-current="page">頁面不存在</span></div></nav>
   <div class="box">
     <p class="code">404</p>
     <h1>搵唔到呢一頁</h1>
@@ -58,6 +65,7 @@
       <li><a href="/">宇見顧問首頁<span>了解我們點樣幫你</span></a></li>
       <li><a href="/leak/">澳門樓宇滲漏水簡易自查<span>免費工具，3 分鐘初步自診</span></a></li>
       <li><a href="/leak/consult.html">滲漏水個案協助<span>搞清權責、鎖定下一步</span></a></li>
+      <li><a href="/business/consult.html">經營規則與項目可行性分析<span>了解五種常見落地難題</span></a></li>
       <li><a href="https://wa.me/85366798555" target="_blank" rel="noopener">WhatsApp 聯絡我們<span>+853 6679 8555</span></a></li>
     </ul>
     <p class="foot">

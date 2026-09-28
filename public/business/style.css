@@ -9,11 +9,6 @@ button{font:inherit;cursor:pointer}
 :focus-visible{outline:3px solid #7fb7f7;outline-offset:3px}
 .shell{width:min(1160px,calc(100% - 48px));margin-inline:auto}
 [id]{scroll-margin-top:100px}
-.site-header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.header-inner{min-height:84px;display:flex;align-items:center;gap:32px}
-.brand{margin-right:auto}.brand img{width:185px;height:auto}
-nav{display:flex;gap:26px;font-weight:600;color:#51657b;font-size:15px}nav a:hover{color:var(--blue)}
-#language-toggle{border:0;background:transparent;color:var(--navy);font-weight:700;padding:10px}
 .hero{background:var(--navy);color:white;padding:100px 0 95px}
 .hero-inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);align-items:center;gap:85px}
 .eyebrow{color:#bed3ee;font-size:14px;font-weight:700;letter-spacing:.11em;margin-bottom:18px}
@@ -76,11 +71,6 @@ footer a{color:var(--navy);font-weight:700}
 }
 @media(max-width:600px){
   .shell{width:min(100% - 32px,1160px)}
-  .header-inner{min-height:68px;gap:8px}
-  .brand img{width:138px}
-  nav{gap:12px;font-size:13px}
-  nav a:first-child{display:none}
-  #language-toggle{font-size:14px}
   .hero{padding:62px 0}
   .hero-inner{gap:37px}
   .lead{font-size:17px}
