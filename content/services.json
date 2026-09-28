@@ -1,0 +1,480 @@
+[
+  {
+    "slug": "business",
+    "category": 2,
+    "zh": {
+      "title": "經營規則與項目可行性分析",
+      "headline": "有構想，先睇清在澳門行唔行得通。",
+      "lead": "想開展新業務，但唔清楚政策容唔容許、要辦甚麼手續；見到別人做到，又唔肯定自己的方案是否適用。",
+      "help": "宇見從本地政策、申請要求及營運安排入手，協助你找出影響落地的關鍵條件，整理需要確認的問題，再比較不同方案的成本、限制及下一步。",
+      "introTitle": "政策支持、申請資格同實際營運，需要逐項看清。",
+      "intro": [
+        "一個構想能否落實，往往取決於具體安排：誰提出申請、在哪裏提供服務、由誰營運和收費，以及需要經過哪些程序。",
+        "把這些條件提早整理清楚，有助你在簽約、購置設備或投入更多資源前，作出更有依據的決定。"
+      ],
+      "note": "以下為常見情境示例，並非已完成的客戶案例。",
+      "cases": [
+        [
+          "外地或同行做得到，我是否可以照做？",
+          "見到外地有成熟模式，或澳門已有類似服務，便想按同一方式經營，卻不清楚對方是否有不同的場地、批准或營運安排。",
+          "實際提供甚麼服務、向誰收費、由誰營運，以及自己的方案與參考例子有哪些差異。表面相似，未必代表適用條件相同。",
+          "拆解服務和營運流程，對照本地公開政策與行政要求，找出不能直接照搬的環節，整理待確認事項及可調整方向。"
+        ],
+        [
+          "有場地、有設備，是否就可以開展業務？",
+          "已找到地方，設備亦有報價，但場地用途、設施條件和申請程序是否配合？擔心簽約付款後，才發現項目落實不到。",
+          "業務內容與場地、設備是否配合，哪些條件需要事先確認，以及哪些投入取決於後續批准。",
+          "把方案與公開申請要求逐項對照，整理投入前需要核實的條件、所需資料及辦理次序，協助你看清是否需要調整場地或營運安排。"
+        ],
+        [
+          "合作模式、收費方式傾好，是否符合本地要求？",
+          "一方提供場地、一方持有設備，另一方營運及收費；亦可能採用會員制、套餐或按次收費。商業安排談妥了，卻未確認是否配合申請和營運要求。",
+          "誰申請、誰提供服務、誰收款，各方實際承擔甚麼工作。服務名稱和收費方式，也需要連同實際運作一併說明。",
+          "梳理各方角色、設備權屬和收費流程，整理不同方案的差異，協助向主管部門提出具體查詢，找出需要調整或進一步尋求專業意見的部分。"
+        ],
+        [
+          "政策鼓勵這個行業，自己的項目是否適用？",
+          "看到政策支持某個產業，想申請資助或開展項目，但不清楚自己的服務是否屬於支持範圍，也未分清資助條件與營運要求。",
+          "政策支持甚麼、誰可申請、哪些項目或開支適用，以及實際營運還有哪些條件需要確認。",
+          "分別整理政策支持、申請資格及營運要求，對照項目的具體內容，列明資料缺口、待確認條件和落地步驟。"
+        ],
+        [
+          "想申請人才計劃，自己的條件是否相符？",
+          "有專業資格和多年工作經驗，希望來澳發展，但不清楚自己的背景、專業成果及來澳發展安排，是否對應相關計劃。",
+          "適用計劃、申請時間及公開要求，以及現有資料能否清楚證明相關經歷和成果。",
+          "按相關計劃的公開條件，梳理個人背景及證明資料，初步對照要求，找出資料缺口和需要向主管部門確認的事項。正式資格及審批結果由主管部門決定。"
+        ],
+        [
+          "項目涉及幾個部門，應該先辦哪一步？",
+          "場地、設施、業務和人員各有要求，文件互相牽連；問過不同部門，仍不清楚先後次序。",
+          "各部門處理哪一部分、哪些文件有前置條件，以及哪項尚未確認的安排會影響整個方案。",
+          "整理程序、文件及查詢清單，標示前置條件和跟進次序，協助準備有具體背景的部門查詢，減少重複準備與往返。"
+        ],
+        [
+          "原本方案遇到限制，還有沒有調整空間？",
+          "初步查詢後發現部分安排難以落實，但已投入時間和資源，不知道應修改方案、分階段推進，還是暫時停止。",
+          "受限制的是核心服務，還是場地、設備、合作角色或營運方式；哪些條件已確認，哪些仍有待查明。",
+          "整理可調整的方向，比較各方案的成本、限制及需要再次確認的事項，協助你決定下一階段值得投入甚麼。"
+        ]
+      ],
+      "outputsTitle": "資料查咗好多，宇見如何幫你整理成下一步？",
+      "outputsIntro": "按個案需要及約定範圍，我們可協助整理：",
+      "outputs": [
+        [
+          "落地條件清單",
+          "哪些條件已有資料支持，哪些仍待確認。"
+        ],
+        [
+          "資料缺口及查詢重點",
+          "欠甚麼文件，需要向哪個部門或專業人士問甚麼。"
+        ],
+        [
+          "方案比較",
+          "不同安排涉及的成本、限制、前置條件和不確定性。"
+        ],
+        [
+          "行動次序",
+          "下一步由誰、用甚麼資料、先處理哪件事。"
+        ]
+      ],
+      "outputsEnd": "讓你在推進、調整或暫緩之前，清楚知道決定建基於甚麼，還有哪些未知需要處理。",
+      "nextTitle": "先把構想講清楚，再看可行的下一步。",
+      "next": [
+        "聯絡時，可先簡單說明："
+      ],
+      "nextList": [
+        "想在澳門開展甚麼業務，或申請甚麼計劃？",
+        "目前準備到哪一步，已查過甚麼資料？",
+        "最想釐清哪個問題，是否有預定時間？"
+      ],
+      "nextEnd": "毋須一開始提交身份證或完整商業文件。我們會先了解情況，說明能否協助，再確認服務範圍、費用及資料提交安排。",
+      "scope": "宇見提供資料整理、公開要求初步對照、選項比較及溝通支援，不提供法律諮詢，亦不保證審批或項目結果。正式審批由主管部門作出；涉及法律、工程、會計等專業判斷，須由相應合資格人士處理。"
+    },
+    "en": {
+      "title": "Business rules and project feasibility",
+      "headline": "Have an idea? See whether it can work in Macao.",
+      "lead": "You want to start a business, but are unsure whether local policies permit it, what procedures apply, or whether a model used by others fits your circumstances.",
+      "help": "U Vision reviews local policies, application requirements and operating arrangements to identify key launch conditions, organise questions to confirm, and compare the costs, constraints and next steps of different options.",
+      "introTitle": "Policy support, eligibility and actual operations each need a closer look.",
+      "intro": [
+        "Whether an idea can be put into practice often depends on specific arrangements: who applies, where services are provided, who operates and collects fees, and which procedures apply.",
+        "Clarifying these conditions early helps you make better informed decisions before signing contracts, buying equipment or committing more resources."
+      ],
+      "note": "These are illustrative situations, not completed client cases.",
+      "cases": [
+        [
+          "Others can do it. Can I use the same model?",
+          "You see an established model elsewhere, or a similar service in Macao, and want to follow it without knowing whether different premises, approvals or operating arrangements apply.",
+          "What service is actually provided, who pays, who operates it, and how your proposal differs from the example. Similar appearances do not necessarily mean the same conditions apply.",
+          "Map services and operations against published local policies and administrative requirements, identify what cannot be copied directly, and list questions and possible adjustments."
+        ],
+        [
+          "I have premises and equipment. Can I start operating?",
+          "You have found premises and obtained equipment quotations, but are unsure whether their use, facilities and application procedures fit. You worry about discovering barriers after signing and paying.",
+          "Whether the business, premises and equipment fit together, which conditions need prior confirmation, and which investments depend on later approval.",
+          "Compare the proposal with published application requirements, list conditions and documents to verify before investing, and clarify the sequence and any changes needed."
+        ],
+        [
+          "Does our partnership and charging model meet local requirements?",
+          "One party provides premises, another owns equipment and a third operates and collects fees. Memberships, packages or per-use charges may be planned, but application and operating requirements remain unchecked.",
+          "Who applies, provides services and collects payments, and what each party actually does. Service names and charging methods need to be explained alongside actual operations.",
+          "Organise roles, equipment ownership and payment flows, compare options, and prepare specific enquiries to authorities about adjustments or further professional advice."
+        ],
+        [
+          "Policy supports this sector. Does my project qualify?",
+          "You want funding or to launch a project in a supported industry, but are unsure whether the service falls within the scope or how funding conditions differ from operating requirements.",
+          "What the policy supports, who may apply, which projects or expenses qualify, and what else must be confirmed for actual operations.",
+          "Review policy support, eligibility and operating requirements separately against the project, identifying information gaps, outstanding conditions and launch steps."
+        ],
+        [
+          "Do I meet the requirements of a talent scheme?",
+          "You have qualifications and years of experience and hope to develop a career in Macao, but are unsure whether your background, achievements and development plans fit a scheme.",
+          "The applicable scheme, application period and published requirements, and whether existing evidence clearly demonstrates your experience and achievements.",
+          "Organise your background and supporting documents against published conditions, identify gaps and questions for the authority. Formal eligibility and approval are decided by the authority."
+        ],
+        [
+          "Several departments are involved. What should I do first?",
+          "Premises, facilities, operations and staff have different requirements, with interdependent documents. Enquiries to several departments have not clarified the order.",
+          "What each department handles, which documents have prerequisites, and which unresolved arrangements affect the whole proposal.",
+          "Organise procedures, document and enquiry lists, mark prerequisites and follow-up priorities, and prepare enquiries with specific background to reduce repeated preparation and visits."
+        ],
+        [
+          "The original proposal faces limits. Can it be adjusted?",
+          "Initial enquiries reveal difficulties, but time and resources have already been invested. You are unsure whether to revise, proceed in stages or pause.",
+          "Whether the restriction affects the core service or the premises, equipment, partnership roles or operating model, and which conditions are confirmed or still unknown.",
+          "List possible adjustments, compare costs and constraints, and identify points needing further confirmation to help decide what is worth investing in next."
+        ]
+      ],
+      "outputsTitle": "How can U Vision turn your research into next steps?",
+      "outputsIntro": "Depending on the case and agreed scope, we can help prepare:",
+      "outputs": [
+        [
+          "Launch conditions",
+          "Which conditions are supported by available information and which remain unconfirmed."
+        ],
+        [
+          "Information gaps and enquiries",
+          "Which documents are missing and what to ask each department or professional."
+        ],
+        [
+          "Option comparisons",
+          "Costs, constraints, prerequisites and uncertainties of different arrangements."
+        ],
+        [
+          "Action sequence",
+          "Who should handle the next step, with which information, and in what order."
+        ]
+      ],
+      "outputsEnd": "Before proceeding, adjusting or pausing, understand the basis of your decision and the uncertainties still to resolve.",
+      "nextTitle": "Tell us about your idea. Then explore the next step.",
+      "next": [
+        "When contacting us, briefly explain:"
+      ],
+      "nextList": [
+        "What business do you want to start in Macao, or which scheme do you want to apply for?",
+        "How far have you prepared, and what information have you already checked?",
+        "What is your main question, and is there a target date?"
+      ],
+      "nextEnd": "There is no need to send identity documents or full business records initially. We first understand your circumstances and explain whether we can help, then agree scope, fees and how to submit information.",
+      "scope": "U Vision supports information organisation, initial comparison with published requirements, option assessment and communication. We do not provide legal advice or guarantee approvals or project outcomes. Formal approvals are decided by the responsible authorities; legal, engineering, accounting and other professional judgements require appropriately qualified professionals."
+    }
+  },
+  {
+    "slug": "crisis",
+    "category": 3,
+    "zh": {
+      "title": "公關危機應對避坑",
+      "headline": "一句回覆、一則帖文，會唔會令事情愈搞愈大？",
+      "lead": "招聘廣告、宣傳優惠、客戶投訴、員工回應，都可能引起外界關注。事情未發生時，可以先檢視容易出現誤解的地方；事情發生後，就要核實事實、安排溝通及跟進改善。",
+      "help": "宇見協助你整理資料、辨識風險，想清楚對誰說、何時說、說甚麼，以及承諾之後如何落實。",
+      "cases": [
+        [
+          "招聘、優惠或宣傳帖文，出街前有甚麼要留意？",
+          "團隊覺得只是普通帖文，發布後卻被質疑條件不清、說法不當，甚至與實際安排不符。",
+          "事實和數字是否準確、重要條件是否清楚，以及不同讀者可能如何理解。涉及法定要求的內容亦需另行核實。",
+          "從資訊完整度、用字及受眾理解檢視文案，找出容易引起爭議的部分，整理發布前的確認事項。"
+        ],
+        [
+          "客戶公開投訴，應該即刻回應嗎？",
+          "帖文開始被轉發，有同事主張立即反駁，亦有人認為不要回應。",
+          "哪些事實已確認、是否仍有損害持續發生，以及客戶和其他受影響者最需要知道甚麼。",
+          "整理事件時間線，規劃初步回應、直接聯絡及後續更新，避免倉促作出無法兌現的承諾。"
+        ],
+        [
+          "對方只講一半，可以公開全部對話澄清嗎？",
+          "機構希望貼出截圖自證清白，但對話包含客戶、員工或第三方資料。",
+          "真正需要澄清哪個事實、哪些內容與問題相關，以及有沒有私隱或保密事項。",
+          "整理澄清重點，比較回應方式；涉及資料披露或法律風險，先交相關專業人士審視。"
+        ],
+        [
+          "記者突然來電，前線應該點答？",
+          "記者要求限時回覆，接聽同事未掌握背景，也不知道誰有權發言。",
+          "查詢內容、回覆時間，以及內部由誰核實、審批和發出回應。",
+          "整理查詢接收及轉交程序，準備回應重點和可能被追問的問題。"
+        ],
+        [
+          "老闆、前線、社交平台各有各講，點收拾？",
+          "客服已作承諾，主管卻表示仍在調查，社交平台又出現另一種說法。",
+          "已說過甚麼、答應過甚麼，以及目前哪些資料可以確認。",
+          "整理共用事實、常見問答和授權範圍，建立更新方式，減少回覆互相矛盾。"
+        ],
+        [
+          "事情未查清，應唔應該道歉？",
+          "怕不道歉顯得冷漠，又怕把未確認的事情全部承認。",
+          "已知影響、待查事實和可以立即採取的改善措施。",
+          "分清關懷、事實說明、處理行動及待查部分，協助準備回應；涉及責任承認交由律師審視。"
+        ],
+        [
+          "退款、補償定重做，點避免愈傾愈亂？",
+          "前線為平息事件不斷加碼，客戶仍不滿意，內部亦不清楚承諾是否可執行。",
+          "實際訴求、已確認的影響、過往承諾及處理權限。",
+          "整理方案和執行條件，協助說明處理範圍、時間與完成確認。"
+        ],
+        [
+          "員工或合作方出事，機構應該點交代？",
+          "事件由員工、供應商或承辦商引起，但客戶和公眾直接要求機構回應。",
+          "機構已掌握多少資料、服務是否受影響，以及可以立即採取甚麼安排。",
+          "整理各方紀錄、受影響範圍和溝通次序，準備可核實的說明及跟進安排。"
+        ],
+        [
+          "網上每個留言都要回？刪除又會點？",
+          "留言愈來愈多，團隊忙於逐則爭辯，或急於刪除，卻未有一致處理原則。",
+          "哪些是具體投訴、疑問、重複訊息或其他內容，以及平台規則和機構既有管理安排。",
+          "分類整理留言和回應需要，準備核心問答及升級條件，讓處理方式有一致依據。"
+        ],
+        [
+          "風波平息之後，點避免再發生？",
+          "網上熱度下降，但原有服務問題、授權不清或跟進遺漏仍然存在。",
+          "事件如何開始、甚麼令問題擴大，以及承諾的改善是否完成。",
+          "整理事件檢討，將發現轉成發布前檢查、投訴記錄、授權和跟進流程。"
+        ]
+      ],
+      "nextTitle": "查詢我們能否協助",
+      "next": [
+        "先說明發生了甚麼、已對外回應甚麼，以及目前最急需要處理哪一步。"
+      ],
+      "scope": "宇見提供分析與溝通支援，不保證輿論走向或個案結果。"
+    },
+    "en": {
+      "title": "Public relations crisis response and pitfalls",
+      "headline": "Could one reply or social post make matters worse?",
+      "lead": "Recruitment adverts, promotions, customer complaints and staff responses can attract public attention. Before an incident, review potential misunderstandings; afterwards, establish the facts, organise communication and follow through on improvements.",
+      "help": "U Vision helps organise information, identify risks and decide whom to speak to, when and what to say, and how to deliver on commitments.",
+      "cases": [
+        [
+          "What should we check before publishing a recruitment or promotional post?",
+          "A routine post is criticised for unclear conditions, inappropriate wording or inconsistencies with actual arrangements.",
+          "Whether facts and figures are accurate, important conditions are clear and different readers may interpret them differently. Statutory requirements also need separate verification.",
+          "Review completeness, wording and audience understanding, identify potential points of dispute and prepare a pre-publication checklist."
+        ],
+        [
+          "A customer complains publicly. Should we respond immediately?",
+          "A post is being shared. Some colleagues want to rebut it immediately; others advise silence.",
+          "Which facts are confirmed, whether harm is continuing, and what customers and others affected most need to know.",
+          "Build the timeline and plan initial responses, direct contact and subsequent updates, avoiding commitments that cannot be delivered."
+        ],
+        [
+          "Can we publish the full conversation to correct a partial account?",
+          "The organisation wants to publish screenshots, but they contain customer, staff or third-party information.",
+          "Which facts really need clarification, what is relevant, and whether privacy or confidentiality is involved.",
+          "Organise clarification points and compare response options. Disclosure or legal risks should first be reviewed by the appropriate professionals."
+        ],
+        [
+          "A journalist calls unexpectedly. How should frontline staff respond?",
+          "A journalist wants a reply by a deadline, but the recipient lacks background and does not know who may speak.",
+          "The questions, deadline and internal responsibility for checking, approving and issuing a response.",
+          "Organise enquiry intake and referral procedures, prepare response points and anticipate follow-up questions."
+        ],
+        [
+          "Management, frontline staff and social channels give conflicting accounts. What now?",
+          "Customer service has made a promise, a manager says investigations are continuing, and social media gives another account.",
+          "What has been said and promised, and which information can currently be confirmed.",
+          "Organise shared facts, FAQs and authority limits, and establish an update process to reduce contradictions."
+        ],
+        [
+          "Should we apologise before all the facts are known?",
+          "You worry that silence appears uncaring, but do not want to accept unconfirmed allegations.",
+          "Known impacts, facts still being checked and improvements that can be made immediately.",
+          "Separate concern, factual explanation, action and open questions when preparing a response. Admissions of liability should be reviewed by a lawyer."
+        ],
+        [
+          "Refund, compensation or rework: how do we keep discussions clear?",
+          "Frontline staff keep increasing offers to settle matters, but customers remain dissatisfied and delivery is uncertain.",
+          "The actual request, confirmed impact, previous commitments and staff authority.",
+          "Organise options and delivery conditions, and help explain scope, timing and completion checks."
+        ],
+        [
+          "A staff member or partner causes an incident. What should the organisation say?",
+          "An employee, supplier or contractor causes an incident, but customers and the public expect the organisation to respond.",
+          "What the organisation knows, whether service is affected and which immediate measures are possible.",
+          "Organise records, affected areas and the communication sequence, preparing verifiable explanations and follow-up arrangements."
+        ],
+        [
+          "Should every online comment get a reply? What about deletion?",
+          "Comments multiply. Staff argue with each one or delete them hastily, without a consistent approach.",
+          "Which posts are specific complaints, questions, repeated messages or other content, and what platform rules and existing moderation arrangements apply.",
+          "Classify comments and response needs, prepare core answers and escalation criteria, and establish a consistent basis for handling them."
+        ],
+        [
+          "How do we prevent a repeat after the controversy fades?",
+          "Online attention falls, but the service issue, unclear authority or missed follow-up remains.",
+          "How the incident began, what made it worse and whether promised improvements were completed.",
+          "Review the incident and turn findings into publication checks, complaint records, authorisation and follow-up procedures."
+        ]
+      ],
+      "nextTitle": "Ask whether we can help",
+      "next": [
+        "Tell us what happened, what has already been said publicly and which step is most urgent."
+      ],
+      "scope": "U Vision provides analysis and communication support. We do not guarantee public opinion or case outcomes."
+    }
+  },
+  {
+    "slug": "training",
+    "category": 4,
+    "zh": {
+      "title": "訂造培訓與政策講解",
+      "headline": "同事最常卡住嘅工作情境，就係培訓嘅起點。",
+      "lead": "新政策與業務有關，但同事不清楚如何落實；前線遇到投訴，不知道怎樣回應；主管面對傳媒查詢，亦未必有足夠準備。",
+      "help": "宇見按機構需要，結合實際工作情境，設計政策講解、投訴處理、傳媒溝通及危機應對培訓，讓同事清楚理解要求，練習處理方法。",
+      "questions": [
+        "新政策出台，究竟同我哋有幾大關係？",
+        "同一項政策，不同部門理解唔同？",
+        "前線遇到情緒激動嘅客戶，只識叫主管？",
+        "同事態度唔差，點解投訴愈講愈激？",
+        "投訴培訓年年做，同樣問題仍然重複？",
+        "主管識處理，但每個人做法都唔同？",
+        "機構面對傳媒查詢，應該邊個學、學啲乜？",
+        "想做危機演練，由邊個情境開始？",
+        "可唔可以用機構自己嘅真實個案上堂？",
+        "培訓做完，點知有冇實際改善？"
+      ],
+      "nextTitle": "毋須先想好課程名稱，先講想改善甚麼。",
+      "next": [
+        "提供培訓對象、人數、可用時間，以及兩三個常見難題，宇見會據此建議內容和形式。"
+      ]
+    },
+    "en": {
+      "title": "Tailored training and policy briefings",
+      "headline": "The work situations your team finds hardest are the starting point.",
+      "lead": "A new policy affects the business, but staff are unsure how to implement it. Frontline teams struggle with complaints, and managers may be unprepared for media enquiries.",
+      "help": "U Vision designs policy briefings, complaint handling, media communication and crisis response training around your organisation and real work situations, helping colleagues understand requirements and practise their responses.",
+      "questions": [
+        "How much does a new policy affect us?",
+        "Do different departments interpret the same policy differently?",
+        "Do frontline staff always call a manager when customers become upset?",
+        "Why do complaints escalate even when staff are polite?",
+        "Why do the same problems recur despite annual complaint training?",
+        "Managers can handle issues, but does everyone use a different approach?",
+        "Who needs media enquiry training, and what should they learn?",
+        "Which scenario should we use for a crisis exercise?",
+        "Can training use our organisation’s real cases?",
+        "How can we tell whether training produces practical improvements?"
+      ],
+      "nextTitle": "Start with what you want to improve. You do not need a course title.",
+      "next": [
+        "Tell us the audience, number of participants, available time and two or three common challenges. U Vision will suggest content and formats based on these."
+      ]
+    }
+  },
+  {
+    "slug": "government",
+    "category": 5,
+    "zh": {
+      "title": "政府信件及程序剖析",
+      "headline": "收到信唔知點覆，辦緊嘅事又唔知卡喺邊？",
+      "lead": "信件要求補資料，但不知道缺哪一份；已打電話查詢，仍未弄清辦理次序；文件交了，卻不知道是否還有下一步。",
+      "help": "宇見協助梳理信件要求、期限、文件和往來紀錄，整理待確認事項，準備查詢及回覆內容。",
+      "questions": [
+        "收到政府信，係咪代表已經違規？",
+        "要求補文件，但唔知究竟欠邊份？",
+        "信上寫幾日內回覆，到底由邊日開始計？",
+        "限期就到，但文件未齊，可以點做？",
+        "部門叫我解釋，係咪寫得愈多愈好？",
+        "信件寫嘅情況，同事實有出入？",
+        "打電話問完，仍然唔知應該點做？",
+        "同一件事涉及幾個部門，應該先找誰？",
+        "收到不批准、追款或處罰通知，下一步點行？",
+        "交咗回覆，點先知件事完咗未？"
+      ],
+      "nextTitle": "先看清要求，再安排文件、查詢和回覆。",
+      "next": [
+        "聯絡時，先簡述信件主旨、收到日期、有否列明期限，以及最不清楚的部分。請先確認提交方式，再提供個案文件。"
+      ],
+      "scope": "宇見提供內容梳理、資料整理及溝通支援，不提供法律諮詢。涉及法律效力、救濟途徑或法定期限的判斷，須尋求合適專業人士協助。"
+    },
+    "en": {
+      "title": "Government letters and procedure analysis",
+      "headline": "Unsure how to reply to a letter, or where your application is stuck?",
+      "lead": "A letter asks for more documents, but you do not know which ones. A phone enquiry leaves the sequence unclear. You have submitted papers, but do not know whether another step remains.",
+      "help": "U Vision helps organise the letter’s requests, deadlines, documents and correspondence, identify points to confirm and prepare enquiries and replies.",
+      "questions": [
+        "Does receiving a government letter mean I have breached a rule?",
+        "Which document is missing from the requested submission?",
+        "When does a response period stated in the letter begin?",
+        "The deadline is near and documents are incomplete. What can I do?",
+        "If a department asks for an explanation, is more detail always better?",
+        "What if the letter’s account differs from the facts?",
+        "I called to ask, but still do not know what to do.",
+        "Several departments are involved. Whom should I contact first?",
+        "What comes after a refusal, repayment demand or penalty notice?",
+        "After submitting a reply, how do I know whether the matter is finished?"
+      ],
+      "nextTitle": "Understand the request, then organise documents, enquiries and replies.",
+      "next": [
+        "Briefly describe the subject, date received, any stated deadline and the part you find unclear. Confirm how to submit documents before sending case files."
+      ],
+      "scope": "U Vision supports content clarification, information organisation and communication. We do not provide legal advice. Judgements about legal effect, remedies or statutory deadlines require appropriate professional assistance."
+    }
+  },
+  {
+    "slug": "other",
+    "category": 6,
+    "zh": {
+      "title": "其他生活及營運難題",
+      "headline": "資料同說法太多，唔知應該由邊度開始？",
+      "lead": "有些問題涉及幾個人、幾間機構或不同工作環節，未必能直接歸入某一類。你可能已問過很多人，仍不知道最重要的問題是甚麼。",
+      "help": "宇見先了解你的處境與需要，整理關鍵資料，找出仍待確認的事項，再判斷能否協助及合適的下一步。",
+      "questions": [
+        "件事太複雜，我都唔知由邊度講起？",
+        "相片、單據、錄音一大堆，邊啲先有用？",
+        "個個畀唔同意見，我應該信邊個？",
+        "已經問過好多地方，點解仍然冇進展？",
+        "買咗服務但效果唔似預期，點樣講先清楚？",
+        "家人對一件事意見不同，愈傾愈傷感情？",
+        "公司件件事都要老闆決定，點樣改善？",
+        "每次開會講好多，散會後仍然冇人跟？",
+        "繼續跟進，定接受現有方案？好難決定。",
+        "唔知應該搵律師、會計、工程師，定顧問？"
+      ],
+      "nextTitle": "未整理好，亦可以先說說你的情況。",
+      "next": [
+        "先告訴我們：發生了甚麼、已試過甚麼，以及目前最想解決甚麼。宇見會先了解問題，再說明適合協助的範圍與安排。"
+      ],
+      "scope": "服務範圍及收費會在了解個案後說明；開始工作前，會先確認內容及安排。"
+    },
+    "en": {
+      "title": "Other practical and operational challenges",
+      "headline": "Too much information and too many accounts. Where do you start?",
+      "lead": "Some issues involve several people, organisations or work processes and do not fit one category. You may have asked many people and still be unsure what matters most.",
+      "help": "U Vision first understands your circumstances and needs, organises key information and identifies open questions, then assesses whether we can help and the appropriate next step.",
+      "questions": [
+        "The issue is so complicated that I do not know where to begin.",
+        "Which of my photos, receipts and recordings are useful?",
+        "Everyone gives different advice. Whom should I believe?",
+        "I have contacted many places. Why is there still no progress?",
+        "A service did not meet expectations. How can I explain the issue clearly?",
+        "Family disagreements keep hurting relationships. What can help?",
+        "Every business decision goes to the owner. How can this improve?",
+        "Meetings cover a lot, but nobody follows up afterwards.",
+        "Should I keep pursuing the matter or accept the current proposal?",
+        "Do I need a lawyer, accountant, engineer or consultant?"
+      ],
+      "nextTitle": "You can tell us about the situation before everything is organised.",
+      "next": [
+        "Tell us what happened, what you have tried and what you most want to resolve. U Vision will first understand the problem, then explain the suitable scope and arrangements."
+      ],
+      "scope": "Scope and fees are explained after we understand the case. Work and arrangements are agreed before starting."
+    }
+  }
+]

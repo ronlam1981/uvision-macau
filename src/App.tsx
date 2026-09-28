@@ -7,7 +7,7 @@ type Language = "zh" | "en";
 
 /* 滲漏水個案的專屬落地頁，靜態檔放在 public/leak/，與本站同一域名。 */
 const SEEPAGE_URL = "leak/consult.html";
-const VIABILITY_URL = "business/consult.html";
+const SERVICE_URLS = [SEEPAGE_URL, null, "business/consult.html", "crisis/consult.html", "training/consult.html", "government/consult.html", "other/consult.html"];
 
 const examples = {
   zh: {
@@ -58,7 +58,7 @@ const copy = {
     ways: [["初步了解", "了解問題、整理重點，判斷下一步應由誰處理。"], ["個案分析", "根據已提供資料，拆解問題、選項、風險及行動次序。"], ["持續支援", "就複雜個案協助跟進資料、會議、溝通及進度節點。"]],
     price: "服務範圍及收費會在了解個案後說明；開始工作前，會先確認內容及安排。",
     seepageCta: "滲漏水？睇下我哋點幫你理清",
-    viabilityCta: "了解五種常見的落地難題",
+    viabilityCta: "了解常見的落地難題",
     founderSummary: ["從新聞採訪、公共議題分析，到協助居民及機構梳理疑難，林宇滔一直重視先聆聽、查證，再找出問題核心。", "創立宇見，是希望把這些經驗轉化為有步驟、有重點的實務支援，陪伴客戶理解處境、比較選項，選擇下一步。"], founderMore: "了解創辦人與宇見理念", founderCaption: "林宇滔｜宇見顧問創辦人", founderKicker: "創辦人", founderTitle: "由林宇滔創立，\n把經驗化為清晰的下一步。",
     founderParas: [
       "林宇滔曾任記者、節目主持，具時事評論及專欄寫作經驗，亦曾擔任公共政策、傳媒溝通及危機管理的培訓導師。在創立宇見前，他長期關注澳門公共政策及各類民生議題，曾協助居民、機構及團體梳理、協調及解決數千個個案，對澳門問題有深入而獨到的見解。",
@@ -96,7 +96,7 @@ const copy = {
     ways: [["Initial discussion", "Understand the issue, identify priorities and decide who should handle the next step."], ["Case analysis", "Review the available information and set out issues, options, risks and priorities."], ["Ongoing support", "Support complex cases through information review, meetings, communications and progress checks."]],
     price: "Scope and fees are explained after we understand the case. The work and arrangement will be confirmed before we begin.",
     seepageCta: "Water seepage? See how we help you get clarity",
-    viabilityCta: "Explore five common launch challenges",
+    viabilityCta: "Explore common launch challenges",
     founderSummary: ["From journalism and public-issue analysis to helping residents and organisations navigate difficult situations, Ron Lam starts by listening, checking the facts and identifying the core issue.", "He founded U Vision to turn that experience into structured, practical support, helping clients understand their situation, compare options and choose their next step."], founderMore: "About our founder and approach", founderCaption: "Ron Lam | Founder, U Vision Consulting", founderKicker: "Founder", founderTitle: "Founded by Ron Lam,\nturning experience into clear next steps.",
     founderParas: [
       "Ron Lam is a former journalist and television presenter with experience in current-affairs commentary and column writing. He has also served as a trainer in public policy, media communication and crisis management. Before founding U Vision, he followed public policy and community issues in Macao and helped residents, organisations and community groups organise, coordinate and resolve thousands of cases, developing a deep and distinctive understanding of local issues.",
@@ -120,8 +120,6 @@ const copy = {
 export default function Home() {
   const [lang, setLang] = useState<Language>(() => new URLSearchParams(window.location.search).get("lang") === "en" ? "en" : "zh");
   const [menuOpen, setMenuOpen] = useState(false);
-  const [copyStatus, setCopyStatus] = useState("");
-  const [manualCopy, setManualCopy] = useState("");
   const t = copy[lang];
   const e = examples[lang];
   const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
@@ -136,27 +134,6 @@ export default function Home() {
     setLang(next);
   }
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const message = lang === "zh"
-      ? `你好，我想向宇見顧問查詢。\n姓名：${data.get("name")}\n聯絡方式：${data.get("contact")}\n問題類別：${data.get("category")}\n\n資料尚未送出，請在 WhatsApp 內按發送。`
-      : `Hello, I would like to enquire with U Vision Consulting.\nName: ${data.get("name")}\nContact: ${data.get("contact")}\nIssue: ${data.get("category")}\n\nPlease press send in WhatsApp to complete your enquiry.`;
-    const cleanMessage = message.split("\n\n")[0];
-    const submitter = (event.nativeEvent as SubmitEvent).submitter as HTMLButtonElement | null;
-    if (submitter?.value === "copy") {
-      try {
-        await navigator.clipboard.writeText(cleanMessage);
-        setManualCopy("");
-        setCopyStatus(lang === "zh" ? "已複製。資料尚未送出，請在通訊軟件內貼上並完成發送。" : "Copied. Nothing has been sent. Paste and send in your messaging app.");
-      } catch {
-        setManualCopy(cleanMessage);
-        setCopyStatus(lang === "zh" ? "未能自動複製，請選取下方文字手動複製。" : "Automatic copying is unavailable. Select and copy the text below.");
-      }
-      return;
-    }
-    window.open(`https://wa.me/85366798555?text=${encodeURIComponent(cleanMessage)}`, "_blank", "noopener,noreferrer");
-  }
 
   return (
     <main>
@@ -201,12 +178,11 @@ export default function Home() {
               <blockquote>{situation}</blockquote>
               <p className="example-label">{e.help}</p><p className="example-help">{help}</p>
               {index === 0 && <span className="example-link">{t.seepageCta}<ArrowRight size={16}/></span>}
-              {index === 2 && <span className="example-link">{t.viabilityCta}<ArrowRight size={16}/></span>}
+              {index >= 2 && <span className="example-link">{lang === "zh" ? "了解常見情境及協助方式" : "Explore situations and support"}<ArrowRight size={16}/></span>}
             </>;
-            return index === 0
-              ? <a className="example-card example-card-link" href={SEEPAGE_URL} key={title}>{content}</a>
-              : index === 2
-              ? <a className="example-card example-card-link" href={`${VIABILITY_URL}${lang === "en" ? "?lang=en" : ""}`} key={title}>{content}</a>
+            const url = SERVICE_URLS[index];
+            return url
+              ? <a className="example-card example-card-link" href={`${url}${lang === "en" && index !== 0 ? "?lang=en" : ""}`} key={title}>{content}</a>
               : <article className="example-card" key={title}>{content}</article>;
           })}</div>
           <div className="examples-contact"><p>{e.prompt}</p><a className="button primary" href="#contact">{e.cta}<ArrowRight size={18}/></a></div>
@@ -223,6 +199,40 @@ export default function Home() {
         </div>
       </div></section>
 
+      <ContactFooter lang={lang} />
+    </main>
+  );
+}
+
+export function ContactFooter({ lang, defaultCategory = null }: { lang: Language; defaultCategory?: number | null }) {
+  const t = copy[lang];
+  const [copyStatus, setCopyStatus] = useState("");
+  const [manualCopy, setManualCopy] = useState("");
+  const [category, setCategory] = useState(defaultCategory === null ? "" : String(defaultCategory));
+  const asset = (path: string) => "/" + path.replace(/^\//, "");
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const message = lang === "zh"
+      ? `你好，我想向宇見顧問查詢。\n姓名：${data.get("name")}\n聯絡方式：${data.get("contact")}\n問題類別：${t.categories[Number(data.get("category"))]}\n\n資料尚未送出，請在 WhatsApp 內按發送。`
+      : `Hello, I would like to enquire with U Vision Consulting.\nName: ${data.get("name")}\nContact: ${data.get("contact")}\nIssue: ${t.categories[Number(data.get("category"))]}\n\nPlease press send in WhatsApp to complete your enquiry.`;
+    const cleanMessage = message.split("\n\n")[0];
+    const submitter = (event.nativeEvent as SubmitEvent).submitter as HTMLButtonElement | null;
+    if (submitter?.value === "copy") {
+      try {
+        await navigator.clipboard.writeText(cleanMessage);
+        setManualCopy("");
+        setCopyStatus(lang === "zh" ? "已複製。資料尚未送出，請在通訊軟件內貼上並完成發送。" : "Copied. Nothing has been sent. Paste and send in your messaging app.");
+      } catch {
+        setManualCopy(cleanMessage);
+        setCopyStatus(lang === "zh" ? "未能自動複製，請選取下方文字手動複製。" : "Automatic copying is unavailable. Select and copy the text below.");
+      }
+      return;
+    }
+    window.open(`https://wa.me/85366798555?text=${encodeURIComponent(cleanMessage)}`, "_blank", "noopener,noreferrer");
+  }
+
+  return <>
       <section id="contact" className="contact-section"><div className="section-shell contact-grid">
         <div className="contact-info">
           <p className="kicker light">{t.contactKicker}</p><h2>{t.contactTitle}</h2><p className="contact-intro">{t.contactIntro}</p><h3>{t.direct}</h3>
@@ -236,7 +246,7 @@ export default function Home() {
         <form className="enquiry-form" onSubmit={handleSubmit}>
           <label>{t.name}<input name="name" required placeholder={t.namePlaceholder}/></label>
           <label>{t.method}<input name="contact" required placeholder={t.methodPlaceholder}/></label>
-          <label>{t.category}<select name="category" required defaultValue=""><option value="" disabled>{t.select}</option>{t.categories.map((category) => <option key={category}>{category}</option>)}</select></label>
+          <label>{t.category}<select name="category" required value={category} onChange={(event) => setCategory(event.target.value)}><option value="" disabled>{t.select}</option>{t.categories.map((label, index) => <option value={index} key={index}>{label}</option>)}</select></label>
           <p className="form-privacy"><ShieldCheck size={17}/>{t.privacy}</p><button type="submit" className="button primary full">{t.send}<ArrowRight size={18}/></button><p className="unsent">{t.unsent}</p>
           <button type="submit" name="action" value="copy" className="button secondary full copy-enquiry">{lang === "zh" ? "複製查詢內容（微信／其他平台）" : "Copy enquiry for WeChat / other platforms"}</button>
           <p className="copy-status" role="status">{copyStatus}</p>
@@ -247,6 +257,5 @@ export default function Home() {
 
       <section className="section-shell boundaries"><article><h2>{t.boundaryTitle}</h2><p>{t.boundary}</p></article><article><h2>{t.privacyTitle}</h2><p>{t.privacyText}</p></article></section>
       <footer><div className="section-shell footer-main"><img src={asset("uvision-logo-h.svg")} alt="宇見顧問有限公司 · U Vision Consultoria Limitada · U Vision Consulting Limited" width="1613" height="529"/><p>{t.footerTagline}</p></div><div className="section-shell footer-bottom"><span>© 2026 {t.rights}</span><span>uvisionconsulting@gmail.com</span></div></footer>
-    </main>
-  );
+  </>;
 }

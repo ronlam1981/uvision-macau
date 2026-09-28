@@ -37,3 +37,6 @@
   .uv-breadcrumbs .uv-trail{width:calc(100% - 32px)}
 }
 @media print{.uv-header,.uv-breadcrumbs{display:none!important}}
+
+#contact{scroll-margin-top:160px}
+@media(max-width:620px){#contact{scroll-margin-top:190px}}

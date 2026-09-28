@@ -108,3 +108,9 @@ section[id]{scroll-margin-top:150px}
 
 /* 首屏細標為英文口號時，改用西文字體與較疏字距 */
 .kicker.kicker-en{font-family:Montserrat,Arial,sans-serif;font-weight:500;font-size:15px;letter-spacing:.1em;color:var(--mid)}
+
+/* Shared contact layout: align both columns and allow long categories on mobile. */
+.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.contact-info,.enquiry-form{min-width:0}
+.enquiry-form select{max-width:100%}
+@media(max-width:900px){.contact-grid{grid-template-columns:minmax(0,1fr)}}

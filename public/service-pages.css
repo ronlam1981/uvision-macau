@@ -1,0 +1,16 @@
+@import url("./business/style.css");
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.button.outline-light{color:#fff}
+.button.outline-light:hover{background:rgba(255,255,255,.1)}
+.intro>p{font-size:18px;color:#53677b;max-width:850px;line-height:1.95}
+.case-list{margin-top:35px}
+.case-detail.three>div:last-child{grid-column:1/-1;background:#e8f0f8;padding:18px 20px;border-left-color:var(--blue)}
+.question h3{margin-bottom:0}
+.output-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0}
+.output-grid article{border-left:3px solid var(--mid);padding:15px 22px;background:var(--mist)}
+.output-grid h3{color:var(--navy);font-size:21px;margin-bottom:10px}
+.output-grid p{margin:0;color:#455b71}
+.next-list{font-size:19px;line-height:1.9;padding-left:25px;margin:0 0 28px}
+.next>p.page-scope{font-size:14px;color:#657789;border-top:1px solid var(--line);padding-top:25px;margin:32px 0 0;max-width:950px}
+#contact{scroll-margin-top:160px}
+@media(max-width:600px){.output-grid{grid-template-columns:1fr}.hero-actions{flex-direction:column}#contact{scroll-margin-top:190px}}
