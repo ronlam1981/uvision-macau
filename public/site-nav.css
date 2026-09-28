@@ -22,7 +22,6 @@
 .uv-breadcrumbs a:hover{text-decoration:underline}
 .uv-breadcrumbs [aria-current]{font-weight:700;color:#183c70}
 .uv-breadcrumbs .uv-separator{color:#8fa1b5}
-body.leak-page .uv-breadcrumbs .uv-trail{max-width:720px}
 @media(max-width:1100px){.uv-desktop-nav{gap:16px;font-size:14px}.uv-header-cta{display:none}}
 @media(max-width:900px){
   .uv-header-inner{min-height:126px}

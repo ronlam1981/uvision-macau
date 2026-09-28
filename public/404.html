@@ -19,22 +19,24 @@
   }
   *{box-sizing:border-box}
   body{
-    margin:0;min-height:100vh;background:var(--mist);color:var(--ink);
+    margin:0;min-height:100vh;background:#fff;color:var(--ink);
     font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
     font-size:17px;line-height:1.7;
   }
-  .box{width:calc(100% - 48px);max-width:34em;margin:72px auto 90px}
+  .error-hero{background:var(--deep-navy);color:white;padding:90px 0}
+  .box{width:min(1160px,calc(100% - 48px));margin:0 auto}
   .code{
     font-family:Montserrat,Arial,sans-serif;font-size:13px;font-weight:500;
-    letter-spacing:.14em;color:var(--vision-mid);margin:0 0 14px;
+    letter-spacing:.14em;color:#bed3ee;margin:0 0 14px;
   }
-  h1{font-size:1.6rem;line-height:1.35;color:var(--deep-navy);margin:0 0 .5em;font-weight:700}
-  p{margin:0 0 1.1em;color:var(--ink-soft)}
-  ul{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--hair)}
+  h1{font-size:clamp(37px,4.7vw,62px);line-height:1.2;color:white;margin:0 0 .5em;font-weight:700}
+  p{margin:0 0 1.1em;color:#dce7f4}
+  .links{padding:65px 0 90px}
+  ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
   li{border-bottom:1px solid var(--hair)}
   li a{
     display:flex;align-items:center;justify-content:space-between;gap:16px;
-    padding:16px 2px;color:var(--uv-blue);font-weight:600;text-decoration:none;
+    padding:23px 2px;color:var(--uv-blue);font-weight:600;text-decoration:none;
   }
   li a:hover{color:var(--deep-navy)}
   li a span{font-size:.86rem;font-weight:400;color:var(--ink-soft);text-align:right}
@@ -44,7 +46,7 @@
   }
   .foot a{color:var(--uv-blue)}
   @media(max-width:520px){
-    h1{font-size:1.35rem}
+    .error-hero{padding:62px 0}
     li a{flex-direction:column;align-items:flex-start;gap:4px}
     li a span{text-align:left}
   }
@@ -57,10 +59,12 @@
     <div class="uv-header-actions"><a class="uv-lang" href="/?lang=en" lang="en" aria-label="English homepage">EN</a><a class="uv-header-cta" href="/#contact">查詢我們能否協助</a><button class="uv-menu" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="uv-mobile-nav">☰</button></div>
   </div><nav class="uv-mobile-nav" id="uv-mobile-nav" aria-label="手機導覽" hidden><a href="/#founder">創辦人</a><a href="/#services">我們如何協助</a><a href="/#process">服務流程</a><a href="/#contact">聯絡我們</a></nav></header>
   <nav class="uv-breadcrumbs" aria-label="目前位置"><div class="uv-trail"><a href="/">首頁</a><span class="uv-separator" aria-hidden="true">›</span><span aria-current="page">頁面不存在</span></div></nav>
-  <div class="box">
+  <section class="error-hero"><div class="box">
     <p class="code">404</p>
     <h1>搵唔到呢一頁</h1>
     <p>可能係網址打錯咗，或者該頁已經搬遷。以下幾條路，總有一條啱你：</p>
+  </div></section>
+  <div class="box links">
     <ul>
       <li><a href="/">宇見顧問首頁<span>了解我們點樣幫你</span></a></li>
       <li><a href="/leak/">澳門樓宇滲漏水簡易自查<span>免費工具，3 分鐘初步自診</span></a></li>

@@ -1,0 +1,85 @@
+@import url("../business/style.css");
+
+/* The two seepage pages share the business page's type, spacing and section rhythm. */
+.wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+.leak-page .hero,.leak-page .lp-hero{background:var(--navy);color:#fff;padding:100px 0 95px}
+.leak-page .hero>.wrap,.leak-page .lp-hero>.wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);align-items:center;column-gap:85px}
+.leak-page .hero .eyebrow,.leak-page .lp-hero .eyebrow{grid-column:1;color:#bed3ee}
+.leak-page .hero h1,.leak-page .lp-hero h1{grid-column:1;color:#fff}
+.leak-page .hero .lead,.leak-page .lp-hero .lead{grid-column:1;color:#dce7f4;font-size:19px;line-height:1.85;margin-bottom:34px}
+.leak-page .hero-actions,.leak-page .lp-hero>.wrap>.btn{grid-column:1}
+.leak-page .hero-aside,.leak-page .lp-trust{grid-column:2;grid-row:2/5;align-self:center;border-top:1px solid rgba(255,255,255,.35);padding-top:25px;color:#dce7f4}
+.leak-page .hero-aside span,.leak-page .lp-trust-title{font-size:14px;color:#bcd0ea;font-weight:700}
+.leak-page .hero-aside p{font-size:19px;line-height:1.9;margin:14px 0 0}
+.leak-page .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.leak-page .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;font-weight:700;text-decoration:none;border:1px solid currentColor}
+.leak-page .btn img{width:20px;height:20px}
+.leak-page .btn-primary,.leak-page .btn-wa{background:#fff;color:var(--navy)}
+.leak-page .btn-primary:hover,.leak-page .btn-wa:hover{background:#dce8f4}
+.leak-page .btn-outline{color:var(--navy);border-color:var(--blue)}
+.leak-page .hero .btn-outline{color:#fff;border-color:#dce7f4}
+.leak-page .btn-outline:hover{background:rgba(111,143,184,.16)}
+.leak-page .sec-label{color:var(--blue);font-size:14px;font-weight:700;letter-spacing:.11em;margin:0 0 18px}
+.leak-page section h2{font-size:clamp(30px,3.5vw,45px);line-height:1.3;color:var(--navy);margin:0 0 25px}
+.leak-page .sec-lead{font-size:18px;line-height:1.95;color:#53677b;max-width:850px}
+.leak-page #diagnose,.leak-page .lp-pain,.leak-page .lp-why{background:var(--mist);padding:92px 0 105px}
+.leak-page .help,.leak-page .lp-how,.leak-page .lp-faq{padding:90px 0 100px}
+.leak-page .cases,.leak-page .lp-list{margin:36px 0 0;border-top:1px solid var(--line)}
+.leak-page .case{display:grid;grid-template-columns:80px minmax(0,1fr) minmax(0,1fr);column-gap:20px;align-items:start;padding:37px 0;border-bottom:1px solid var(--line)}
+.leak-page .case-no{grid-row:1/5;color:var(--blue);font:700 18px/1.5 Arial,sans-serif;letter-spacing:.08em}
+.leak-page .case h3{grid-column:2/4;color:var(--navy);font-size:clamp(22px,2.4vw,29px);line-height:1.4;margin:0 0 22px}
+.leak-page .case .dia{grid-column:2;grid-row:2/4;margin:0 18px 0 0}
+.leak-page .case .dia img{width:100%;height:auto}
+.leak-page .case .field{grid-column:3;margin:0 0 20px;border-left:3px solid var(--mid);padding-left:18px}
+.leak-page .case .method{grid-column:3;grid-row:3;border-left:3px solid var(--mid);padding-left:18px}
+.leak-page .field .k,.leak-page .method .k{display:block;color:var(--blue);font-weight:700;font-size:15px;margin-bottom:6px}
+.leak-page .field,.leak-page .method p{color:#455b71;line-height:1.85}
+.leak-page .method p{margin:0}.leak-page .method .caveat{display:block;color:#60758a;font-size:14px;margin-top:9px}
+.leak-page .routes,.leak-page .lp-list,.leak-page .lp-steps{list-style:none;padding:0}
+.leak-page .routes{border-top:1px solid var(--line);margin:34px 0}
+.leak-page .routes>li{border-bottom:1px solid var(--line);padding:30px 0}
+.leak-page .routes h4,.leak-page .lp-list h3,.leak-page .lp-steps h3,.leak-page .lp-why-grid h3{font-size:clamp(20px,2.4vw,28px);line-height:1.4;color:var(--navy);margin:0 0 12px}
+.leak-page .routes p,.leak-page .lp-list p,.leak-page .lp-steps p,.leak-page .lp-why-grid p{color:#455b71;line-height:1.85;margin:0 0 12px}
+.leak-page .routes a,.leak-page .lp-faq a,.leak-page .uv-alt a{color:var(--blue);font-weight:700}
+.leak-page .booklets{border-left:3px solid var(--mid);padding-left:18px;margin-top:20px}
+.leak-page .booklets ul{padding-left:20px;margin:5px 0}.leak-page .booklets li{margin:6px 0}
+.leak-page .pdf{font-size:12px;margin-left:5px}
+.leak-page .handoff{color:var(--navy);font-size:19px;font-weight:700;margin:56px 0 24px}
+.leak-page .uv{border-top:3px solid var(--blue);background:var(--mist);padding:35px;max-width:850px}
+.leak-page .uv .logo{width:300px;margin-bottom:20px}
+.leak-page .uv .sr-title{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.leak-page .uv p,.leak-page .uv li{color:#455b71}.leak-page .uv ul{padding-left:20px}
+.leak-page .uv .btn-primary{background:var(--navy);color:#fff}.leak-page .uv-alt img{display:inline;vertical-align:middle;width:19px}
+.leak-page .lp-trust{list-style:none;padding-left:0;margin:0}.leak-page .lp-trust li{font-size:19px;line-height:1.9;margin:12px 0}
+.leak-page .lp-list{counter-reset:issue}
+.leak-page .lp-list li{display:grid;grid-template-columns:80px 1fr;column-gap:20px;counter-increment:issue;padding:32px 0;border-bottom:1px solid var(--line)}
+.leak-page .lp-list li:before{content:counter(issue,decimal-leading-zero);color:var(--blue);font:700 18px/1.5 Arial,sans-serif}
+.leak-page .lp-list h3,.leak-page .lp-list p{grid-column:2}.leak-page .lp-list h3{grid-row:1;margin:0 0 12px}.leak-page .lp-list p{margin:0}
+.leak-page .lp-steps{counter-reset:step;border-top:1px solid var(--line);margin:36px 0 0}
+.leak-page .lp-steps li{display:grid;grid-template-columns:80px 1fr;column-gap:20px;counter-increment:step;padding:35px 0;border-bottom:1px solid var(--line)}
+.leak-page .lp-steps li:before{content:counter(step,decimal-leading-zero);color:var(--blue);font:700 18px/1.5 Arial,sans-serif}
+.leak-page .lp-steps h3,.leak-page .lp-steps p{grid-column:2}.leak-page .lp-steps h3{grid-row:1}.leak-page .lp-steps p{margin:0}
+.leak-page .lp-why-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.leak-page .lp-why-grid>div{border-left:3px solid var(--mid);padding-left:18px}
+.leak-page .lp-faq{background:#fff}.leak-page .lp-qa{margin:30px 0 0;border-top:1px solid var(--line)}
+.leak-page .lp-qa dt{color:var(--navy);font-size:21px;font-weight:700;padding-top:27px;margin-top:27px;border-top:1px solid var(--line)}
+.leak-page .lp-qa dt:first-child{border-top:0;margin-top:0}
+.leak-page .lp-qa dd{color:#455b71;margin:8px 0 0;line-height:1.85;max-width:900px}
+.leak-page .qa-list{padding-left:20px}
+.leak-page .next{padding-block:95px 100px}.leak-page .next h2{max-width:850px}
+.leak-page .next p:not(.eyebrow){font-size:19px}.leak-page .scope p{margin:0}
+.leak-page .contact-section h2{color:#fff}
+@media(max-width:800px){.leak-page .hero>.wrap,.leak-page .lp-hero>.wrap{grid-template-columns:1fr;gap:0}.leak-page .hero-aside,.leak-page .lp-trust{grid-column:1;grid-row:auto;margin-top:44px}.leak-page .hero,.leak-page .lp-hero{padding-block:75px}.leak-page .lp-why-grid{grid-template-columns:1fr;gap:25px}}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 32px)}
+ .leak-page .hero,.leak-page .lp-hero{padding:62px 0}
+ .leak-page .hero .lead,.leak-page .lp-hero .lead,.leak-page .hero-aside p,.leak-page .lp-trust li{font-size:17px}
+ .leak-page .hero-actions{display:grid}.leak-page .hero-actions .btn,.leak-page .lp-hero>.wrap>.btn{width:100%}
+ .leak-page #diagnose,.leak-page .lp-pain,.leak-page .lp-why,.leak-page .help,.leak-page .lp-how,.leak-page .lp-faq,.leak-page .next{padding-block:65px}
+ .leak-page .case{grid-template-columns:1fr;padding:30px 0}
+ .leak-page .case-no,.leak-page .case h3,.leak-page .case .dia,.leak-page .case .field,.leak-page .case .method{grid-column:1;grid-row:auto}
+ .leak-page .case-no{margin-bottom:8px}.leak-page .case .dia{margin:0 0 18px}
+ .leak-page .lp-list li,.leak-page .lp-steps li{grid-template-columns:1fr;gap:6px}
+ .leak-page .lp-list h3,.leak-page .lp-list p,.leak-page .lp-steps h3,.leak-page .lp-steps p{grid-column:1;grid-row:auto}
+ .leak-page .uv{padding:25px}
+}
