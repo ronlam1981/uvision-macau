@@ -7,6 +7,7 @@ type Language = "zh" | "en";
 
 /* 滲漏水個案的專屬落地頁，靜態檔放在 public/leak/，與本站同一域名。 */
 const SEEPAGE_URL = "leak/consult.html";
+const VIABILITY_URL = "business/consult.html";
 
 const examples = {
   zh: {
@@ -16,10 +17,10 @@ const examples = {
     items: [
       ["滲漏水問題", "屋企不斷滲水，樓上同管理公司各有講法，唔知應該先搵邊個。", "整理滲水紀錄及各方回覆，釐清待查問題，協助規劃檢測、溝通及跟進次序。"],
       ["分析樓宇管理糾紛", "大廈準備做大維修，報價、工程範圍同開會文件睇唔明，點樣提出疑問？", "梳理工程及會議資料，列出需要釐清的重點，協助準備提問及溝通。"],
+      ["經營規則與項目可行性分析", "想開展新業務，但唔清楚政策容唔容許、要辦甚麼手續；見到別人做到，又唔肯定自己的方案是否可行。", "梳理政策、申請要求及營運安排，找出影響項目落地的關鍵問題，協助準備部門查詢，比較不同方案的成本、限制及下一步。"],
       ["政府信件理解", "收到政府信件，要求補文件或者作出回覆，但唔清楚要做啲乜。", "解讀信件要求，整理期限、所需資料及待確認事項，協助準備回覆內容。"],
       ["企業與機構危機疑難應對", "客戶投訴放上網，員工、客戶同合作伙伴都追問，應該點回應？", "整理事實、辨識風險，規劃溝通次序及回應重點。"],
       ["政策講解與企業機構訂造培訓", "新政策同業務有關，但同事唔清楚有咩影響；前線遇到投訴，亦唔知點應對。", "按機構需要講解政策，結合工作情境，設計投訴處理、傳媒溝通或危機應對培訓。"],
-      ["租務與合作爭議", "租客拖欠租金，承諾一拖再拖；又或者合作出現分歧，大家各執一詞。", "整理協議、付款及對話紀錄，找出爭議核心，比較協商及尋求專業協助等下一步。"],
       ["其他生活及營運難題", "資料同說法太多，問題又未必屬於某一類，唔知應該由邊度開始。", "先了解處境與需要，整理關鍵資料，再判斷宇見能否協助及合適的下一步。"],
     ],
   },
@@ -30,10 +31,10 @@ const examples = {
     items: [
       ["Water seepage", "Water keeps leaking into my home. The upstairs neighbour and building manager give different accounts. Who should I speak to first?", "Organise seepage records and responses, identify unanswered questions, and plan the sequence of inspections, communication and follow-up."],
       ["Building management dispute analysis", "Our building is planning major repairs. I do not understand the quotations, scope or meeting papers. What questions should I ask?", "Review project and meeting information, identify points needing clarification, and help prepare questions and communications."],
+      ["Business rules and project feasibility", "I want to start a new business, but I am unsure whether local rules permit it, what approvals are needed, or whether my proposed model can work in Macao.", "Review applicable policies, application requirements and operating arrangements; identify barriers to launch, prepare questions for authorities, and compare the costs, constraints and next steps for different approaches."],
       ["Government letters", "I received a government letter asking for more documents or a response, but I am not sure what I need to do.", "Clarify the letter’s requests, deadlines, required information and outstanding questions, and help prepare a response."],
       ["Business and organisational crisis response", "A customer has posted a complaint online. Staff, customers and partners are asking questions. How should we respond?", "Establish the facts, identify risks and plan the sequence and substance of communications."],
       ["Policy briefings and tailored training", "A new policy affects our work, but colleagues are unsure how. Frontline staff also need help handling complaints.", "Explain policies relevant to the organisation and design scenario-based training in complaint handling, media communication or crisis response."],
-      ["Tenancy and partnership disputes", "My tenant keeps delaying overdue rent payments. Or a business partnership has run into disagreements, with conflicting accounts.", "Organise agreements, payment records and conversations, identify the core dispute, and compare next steps such as negotiation or seeking professional support."],
       ["Other practical challenges", "There are many documents and differing accounts, and the issue does not fit neatly into one category. Where should I start?", "Understand the situation and needs, organise the key information, then determine whether U Vision can help and what the next step could be."],
     ],
   },
@@ -59,6 +60,7 @@ const copy = {
     ways: [["初步了解", "了解問題、整理重點，判斷下一步應由誰處理。"], ["個案分析", "根據已提供資料，拆解問題、選項、風險及行動次序。"], ["持續支援", "就複雜個案協助跟進資料、會議、溝通及進度節點。"]],
     price: "服務範圍及收費會在了解個案後說明；開始工作前，會先確認內容及安排。",
     seepageCta: "滲漏水？睇下我哋點幫你理清",
+    viabilityCta: "了解五種常見的落地難題",
     founderSummary: ["從新聞採訪、公共議題分析，到協助居民及機構梳理疑難，林宇滔一直重視先聆聽、查證，再找出問題核心。", "創立宇見，是希望把這些經驗轉化為有步驟、有重點的實務支援，陪伴客戶理解處境、比較選項，選擇下一步。"], founderMore: "了解創辦人與宇見理念", founderCaption: "林宇滔｜宇見顧問創辦人", founderKicker: "創辦人", founderTitle: "由林宇滔創立，\n把經驗化為清晰的下一步。",
     founderParas: [
       "林宇滔曾任記者、節目主持，具時事評論及專欄寫作經驗，亦曾擔任公共政策、傳媒溝通及危機管理的培訓導師。在創立宇見前，他長期關注澳門公共政策及各類民生議題，曾協助居民、機構及團體梳理、協調及解決數千個個案，對澳門問題有深入而獨到的見解。",
@@ -68,7 +70,7 @@ const copy = {
     contactKicker: "聯絡我們", contactTitle: "先把問題說清楚，\n再一起找下一步。",
     contactIntro: "你可以直接聯絡我們，或填寫三項基本資料，再前往 WhatsApp 確認發送。",
     name: "姓名", namePlaceholder: "如何稱呼你", method: "聯絡方式", methodPlaceholder: "電話、WhatsApp 或電郵", category: "問題類別", select: "請選擇",
-    categories: ["滲漏水／樓宇管理", "租務糾紛", "政府信件理解", "投訴／危機應對", "合作爭議", "政策講解／訂造培訓", "其他"],
+    categories: ["滲漏水／樓宇管理", "經營規則／項目可行性", "租務糾紛", "政府信件理解", "投訴／危機應對", "合作爭議", "政策講解／訂造培訓", "其他"],
     privacy: "只需提供基本聯絡資料。請勿在此提交身份證、合約、相片或其他個案文件。",
     send: "前往 WhatsApp 確認發送", unsent: "資料尚未送出，請在通訊軟件內完成發送。", direct: "直接聯絡",
     address: "澳門桔仔街65號一樓（到訪請提前預約）", qr: "掃描 QR Code 開啟 WhatsApp",
@@ -96,6 +98,7 @@ const copy = {
     ways: [["Initial discussion", "Understand the issue, identify priorities and decide who should handle the next step."], ["Case analysis", "Review the available information and set out issues, options, risks and priorities."], ["Ongoing support", "Support complex cases through information review, meetings, communications and progress checks."]],
     price: "Scope and fees are explained after we understand the case. The work and arrangement will be confirmed before we begin.",
     seepageCta: "Water seepage? See how we help you get clarity",
+    viabilityCta: "Explore five common launch challenges",
     founderSummary: ["From journalism and public-issue analysis to helping residents and organisations navigate difficult situations, Ron Lam starts by listening, checking the facts and identifying the core issue.", "He founded U Vision to turn that experience into structured, practical support, helping clients understand their situation, compare options and choose their next step."], founderMore: "About our founder and approach", founderCaption: "Ron Lam | Founder, U Vision Consulting", founderKicker: "Founder", founderTitle: "Founded by Ron Lam,\nturning experience into clear next steps.",
     founderParas: [
       "Ron Lam is a former journalist and television presenter with experience in current-affairs commentary and column writing. He has also served as a trainer in public policy, media communication and crisis management. Before founding U Vision, he followed public policy and community issues in Macao and helped residents, organisations and community groups organise, coordinate and resolve thousands of cases, developing a deep and distinctive understanding of local issues.",
@@ -105,7 +108,7 @@ const copy = {
     contactKicker: "Contact us", contactTitle: "Clarify the issue first.\nThen find the next step together.",
     contactIntro: "Contact us directly, or provide three basic details before continuing to WhatsApp to confirm and send.",
     name: "Name", namePlaceholder: "How should we address you?", method: "Contact details", methodPlaceholder: "Phone, WhatsApp or email", category: "Type of issue", select: "Please select",
-    categories: ["Water seepage / building management", "Tenancy dispute", "Government letter", "Complaint / crisis response", "Partnership dispute", "Policy briefing / tailored training", "Other"],
+    categories: ["Water seepage / building management", "Business rules / project feasibility", "Tenancy dispute", "Government letter", "Complaint / crisis response", "Partnership dispute", "Policy briefing / tailored training", "Other"],
     privacy: "Basic contact details only. Do not submit identity documents, contracts, photos or case files here.",
     send: "Continue to WhatsApp", unsent: "Nothing has been sent yet. Please complete sending in the messaging app.", direct: "Contact directly",
     address: "1/F, No. 65 Rua dos Cules, Macao (visits by appointment)", qr: "Scan to open WhatsApp",
@@ -189,9 +192,12 @@ export default function Home() {
               <blockquote>{situation}</blockquote>
               <p className="example-label">{e.help}</p><p className="example-help">{help}</p>
               {index === 0 && <span className="example-link">{t.seepageCta}<ArrowRight size={16}/></span>}
+              {index === 2 && <span className="example-link">{t.viabilityCta}<ArrowRight size={16}/></span>}
             </>;
             return index === 0
               ? <a className="example-card example-card-link" href={SEEPAGE_URL} key={title}>{content}</a>
+              : index === 2
+              ? <a className="example-card example-card-link" href={`${VIABILITY_URL}${lang === "en" ? "?lang=en" : ""}`} key={title}>{content}</a>
               : <article className="example-card" key={title}>{content}</article>;
           })}</div>
           <div className="examples-contact"><p>{e.prompt}</p><a className="button primary" href="#contact">{e.cta}<ArrowRight size={18}/></a></div>
