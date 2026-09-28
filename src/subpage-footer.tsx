@@ -14,6 +14,7 @@ if (host) {
   function Footer() {
     const [lang, setLang] = useState<"zh" | "en">(document.documentElement.lang === "en" ? "en" : "zh");
     useEffect(() => {
+      if (location.hash === "#contact") requestAnimationFrame(() => host?.parentElement?.scrollIntoView({ block: "start" }));
       const observer = new MutationObserver(() => setLang(document.documentElement.lang === "en" ? "en" : "zh"));
       observer.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
       return () => observer.disconnect();
