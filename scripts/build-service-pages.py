@@ -27,11 +27,13 @@ def content(page, lang):
     if d.get('intro'):
         parts.append(f'<section class="intro shell"><h2>{e(d["introTitle"])}</h2>{paragraphs(d["intro"])}</section>')
     title = ('你可能正遇到這些問題' if zh else 'You may be facing these situations') if d.get('cases') else ('十個常見問題' if zh else 'Ten common questions')
+    title = d.get('sectionTitle', title)
     parts.append(f'<section class="cases" id="cases-{lang}"><div class="shell"><p class="eyebrow dark">{e(d["title"])}</p><h2>{title}</h2>')
     if d.get('note'):
         parts.append(f'<p class="section-note">{e(d["note"])}</p>')
     parts.append('<div class="case-list">')
     labels = ['常見情境', '先釐清', '宇見可以協助' if page['slug'] == 'crisis' else '宇見可以怎樣幫'] if zh else ['Common situation', 'Clarify first', 'How U Vision can help']
+    labels = d.get('caseLabels', labels)
     for i, item in enumerate(d.get('cases', []), 1):
         details = ''.join(f'<div><h4>{label}</h4><p>{e(text)}</p></div>' for label, text in zip(labels, item[1:]))
         parts.append(f'<article class="case"><span class="number">{i:02}</span><div><h3>{e(item[0])}</h3><div class="case-detail three">{details}</div></div></article>')

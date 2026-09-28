@@ -12,7 +12,6 @@
         "你可能已經問過管理處、開過會，手上亦有相片、單據和群組訊息，仍然不知道下一步可以做甚麼。",
         "以下由大維修開始，整理十個常見情境。每題分為「常見情境」、「先釐清」及「宇見可以怎樣幫」，方便你辨認問題，找到值得先做的一步。"
       ],
-      "note": "以下為常見情境示例，並非已完成的客戶案例。",
       "cases": [
         [
           "外牆或升降機要大修，報價差很遠怎樣選？",
@@ -118,7 +117,6 @@
         "You may already have contacted the management office, attended meetings and collected photographs, receipts and group messages, yet still be unsure what to do next.",
         "Starting with major repairs, these ten situations set out the issue, what to clarify first and how U Vision can help."
       ],
-      "note": "These are illustrative situations, not completed client cases.",
       "cases": [
         [
           "Major façade or lift repairs: how do you compare very different quotations?",
@@ -228,7 +226,6 @@
         "一個構想能否落實，往往取決於具體安排：誰提出申請、在哪裏提供服務、由誰營運和收費，以及需要經過哪些程序。",
         "把這些條件提早整理清楚，有助你在簽約、購置設備或投入更多資源前，作出更有依據的決定。"
       ],
-      "note": "以下為常見情境示例，並非已完成的客戶案例。",
       "cases": [
         [
           "外地或同行做得到，我是否可以照做？",
@@ -316,7 +313,6 @@
         "Whether an idea can be put into practice often depends on specific arrangements: who applies, where services are provided, who operates and collects fees, and which procedures apply.",
         "Clarifying these conditions early helps you make better informed decisions before signing contracts, buying equipment or committing more resources."
       ],
-      "note": "These are illustrative situations, not completed client cases.",
       "cases": [
         [
           "Others can do it. Can I use the same model?",
@@ -553,44 +549,122 @@
       "headline": "同事最常卡住嘅工作情境，就係培訓嘅起點。",
       "lead": "新政策與業務有關，但同事不清楚如何落實；前線遇到投訴，不知道怎樣回應；主管面對傳媒查詢，亦未必有足夠準備。",
       "help": "宇見按機構需要，結合實際工作情境，設計政策講解、投訴處理、傳媒溝通及危機應對培訓，讓同事清楚理解要求，練習處理方法。",
-      "questions": [
-        "新政策出台，究竟同我哋有幾大關係？",
-        "同一項政策，不同部門理解唔同？",
-        "前線遇到情緒激動嘅客戶，只識叫主管？",
-        "同事態度唔差，點解投訴愈講愈激？",
-        "投訴培訓年年做，同樣問題仍然重複？",
-        "主管識處理，但每個人做法都唔同？",
-        "機構面對傳媒查詢，應該邊個學、學啲乜？",
-        "想做危機演練，由邊個情境開始？",
-        "可唔可以用機構自己嘅真實個案上堂？",
-        "培訓做完，點知有冇實際改善？"
-      ],
-      "nextTitle": "毋須先想好課程名稱，先講想改善甚麼。",
+      "nextTitle": "毋須先想好課程名稱，先講同事最常遇到甚麼難題。",
       "next": [
-        "提供培訓對象、人數、可用時間，以及兩三個常見難題，宇見會據此建議內容和形式。"
-      ]
+        "提供培訓對象、人數、可用時間，以及兩三個實際工作情境，宇見會據此建議合適的內容和形式。"
+      ],
+      "cases": [
+        [
+          "危機事件面對傳媒、政府及公眾查詢，應該如何應對？",
+          "不同對象需要的資訊、回覆形式和時限可能不同，但回應必須建基於一致的事實。先核實已知情況，分清待查事項，安排資料整理、審批和發言分工；政府正式查詢須另行確認要求及期限，公眾則需要知道影響、處理措施和更新安排。",
+          "活動發生意外後，記者查詢經過、政府部門要求提交資料，參加者追問後續安排。機構應建立共用時間線和已核實資料，再分別準備傳媒回應、部門所需文件及參加者通知。",
+          "透過模擬查詢，訓練團隊核實資料、區分回應對象、安排溝通次序及處理追問，並釐清何時需要法律或其他專業支援。"
+        ],
+        [
+          "同一項政策，不同部門理解唔同？",
+          "先找出分歧來自資料版本、用語理解，還是不同工作情境。有明確依據的，整理成共同標準；仍有疑問的，列出具體問題向主管部門確認，避免各自猜測。",
+          "前線認為客戶可以先交部分文件，行政部門卻要求資料齊備才處理。原來大家把「接收資料」和「正式受理」當成同一步。培訓可釐清兩者分別，以及各階段應如何向客戶說明。",
+          "收集各部門的疑問，透過案例討論找出理解差異，整理共用說明、文件清單和待確認事項。"
+        ],
+        [
+          "前線遇到情緒激動嘅客戶，只識叫主管？",
+          "前線未必有權批准退款或例外安排，但可以先聆聽、確認問題、記錄訴求和說明下一步。同時要清楚甚麼情況可以自行處理、何時必須轉交，以及涉及威嚇或安全風險時如何求助。",
+          "客戶因等候過久而提高聲線。前線可先說：「你原本預約兩點，依家已經等咗四十分鐘，我先幫你確認仲要等幾耐，再同你講可安排嘅選項。」遇到超出權限的要求，再向主管完整交代。",
+          "按機構實際授權設計練習，訓練前線穩定對話、整理資料及轉交個案，避免一遇到不滿便推給主管。"
+        ],
+        [
+          "同事態度唔差，點解投訴愈講愈激？",
+          "有禮貌不代表已回應對方的關注。客戶想知道何時解決，同事卻不斷解釋規定，容易令人感到被推搪。處理時應先確認問題和訴求，再說明可以做甚麼、有哪些限制，以及何時跟進。",
+          "客戶追問退款，同事反覆說：「公司有程序，請耐心等候。」可以改為：「我知道你最想確認退款日期。我會先查核進度，今日五點前回覆你；如果仍未有結果，亦會交代下一步。」回覆時間必須符合實際能力。",
+          "透過對話分析和角色練習，找出容易激化情緒的說法，練習確認訴求、解釋限制及提出具體安排。"
+        ],
+        [
+          "可唔可以用機構自己嘅真實個案上堂？",
+          "可以，真實個案更容易連接日常工作。使用前應確認分享範圍，移除不必要的個人及商業資料；仍在處理的爭議亦要審慎選材。討論應集中於當時掌握的資訊、處理選項和改善方法。",
+          "把一宗退款投訴匿名化，在「客戶第二次追問」的位置暫停，請學員分別扮演客戶、前線和主管，再比較不同回覆與處理安排的效果。",
+          "協助篩選及改編個案，設計討論題、角色扮演和書面回覆練習，讓同事在熟悉的情境中練習判斷。"
+        ],
+        [
+          "培訓年年做，問題仍然重複，點樣透過演練落實改善？",
+          "先找出問題來自技巧、授權、資訊還是工作流程，再設計對應訓練。演練應測試同事能否在時間緊迫、資訊不完整的情況下作出安排；完成後訂明改善事項，再透過工作紀錄和觀察檢視成效。",
+          "機構經常因活動改期被投訴，可演練「臨時改期—參加者要求退款—網上出現批評—傳媒查詢」。若發現退款授權和通知名單不清楚，便應補好流程，再以第二輪演練檢查改善。",
+          "分析重複問題，設計分階段演練，整理改善清單、負責人及檢視方法，將課堂學習連接到實際工作。"
+        ],
+        [
+          "新政策出台，究竟同我哋有幾大關係？",
+          "先看政策適用於誰、何時實施，以及影響哪些工作。管理層需要掌握營運調整，行政人員要了解文件與程序，前線則要知道如何向客戶解釋。講解應落實到各崗位需要做甚麼。",
+          "某項申請計劃更新文件要求，前線仍按舊清單收件，行政部門已使用新標準，客戶因而反覆補交。培訓可用一宗模擬申請，逐步對照新舊安排與各崗位的改動。",
+          "整理官方政策及指引，對照機構流程，設計崗位重點、情境問答和行動清單，列明仍待確認的問題。"
+        ]
+      ],
+      "sectionTitle": "常見問題",
+      "caseLabels": [
+        "解答",
+        "情境例子",
+        "宇見可以怎樣幫"
+      ],
+      "scope": "政策講解以相關官方資料為基礎，並註明資料日期；涉及具體法律適用或其他專業判斷，須尋求相應專業人士意見。"
     },
     "en": {
       "title": "Tailored training and policy briefings",
       "headline": "The work situations your team finds hardest are the starting point.",
       "lead": "A new policy affects the business, but staff are unsure how to implement it. Frontline teams struggle with complaints, and managers may be unprepared for media enquiries.",
       "help": "U Vision designs policy briefings, complaint handling, media communication and crisis response training around your organisation and real work situations, helping colleagues understand requirements and practise their responses.",
-      "questions": [
-        "How much does a new policy affect us?",
-        "Do different departments interpret the same policy differently?",
-        "Do frontline staff always call a manager when customers become upset?",
-        "Why do complaints escalate even when staff are polite?",
-        "Why do the same problems recur despite annual complaint training?",
-        "Managers can handle issues, but does everyone use a different approach?",
-        "Who needs media enquiry training, and what should they learn?",
-        "Which scenario should we use for a crisis exercise?",
-        "Can training use our organisation’s real cases?",
-        "How can we tell whether training produces practical improvements?"
-      ],
-      "nextTitle": "Start with what you want to improve. You do not need a course title.",
+      "nextTitle": "You do not need a course title. Start with the situations your colleagues find difficult.",
       "next": [
-        "Tell us the audience, number of participants, available time and two or three common challenges. U Vision will suggest content and formats based on these."
-      ]
+        "Tell us the audience, number of participants, available time and two or three real work situations. U Vision will suggest suitable content and formats."
+      ],
+      "cases": [
+        [
+          "During a crisis, how should we respond to the media, government and public?",
+          "Different audiences may need different information, formats and response times, but all responses must rest on consistent facts. Verify what is known, distinguish outstanding questions and assign responsibilities for information, approval and spokespersons. Confirm formal government requests and deadlines separately; explain impacts, measures and updates to the public.",
+          "After an accident at an event, journalists ask what happened, a government department requests records and participants ask about arrangements. Establish a shared timeline and verified information, then prepare media responses, the requested documents and participant notices.",
+          "Use simulated enquiries to practise verification, audience-specific responses, communication sequencing and follow-up questions, including when legal or other professional support is needed."
+        ],
+        [
+          "Do different departments interpret the same policy differently?",
+          "Identify whether disagreement comes from document versions, terminology or different work situations. Turn clear requirements into shared standards; put unresolved questions to the responsible authority rather than guessing.",
+          "Frontline staff accept partial documents, while administrators require a complete submission. They have confused receiving documents with formally accepting an application. Training can explain the distinction and how to communicate each stage.",
+          "Collect departmental questions, explore differences through case discussions and prepare shared explanations, document lists and points requiring confirmation."
+        ],
+        [
+          "Do frontline staff always call a manager when customers become upset?",
+          "Staff may not be authorised to approve refunds or exceptions, but they can listen, confirm the issue, record requests and explain the next step. They should know what they can handle, when to escalate and how to seek help if there are threats or safety risks.",
+          "A customer raises their voice after a long wait. Staff might say: ‘Your appointment was at two and you have waited forty minutes. I will check the remaining wait and explain the available options.’ Requests beyond their authority should then be handed over with a complete account.",
+          "Design exercises around actual delegated authority, helping staff keep conversations steady, organise information and hand over cases appropriately."
+        ],
+        [
+          "Why do complaints escalate even when staff are polite?",
+          "Courtesy alone may not address the concern. A customer wants to know when a problem will be resolved, while staff repeatedly explain rules. First confirm the issue and request, then explain available actions, limits and follow-up timing.",
+          "Instead of repeatedly asking a customer awaiting a refund to be patient, say: ‘I understand that you want to know the refund date. I will check and reply by five today. If it is still unresolved, I will explain the next step.’ Only commit to a response time that is achievable.",
+          "Use dialogue analysis and role-play to identify wording that escalates tension and practise acknowledging requests, explaining limits and proposing concrete arrangements."
+        ],
+        [
+          "Can training use our organisation’s real cases?",
+          "Yes. Real cases connect training with everyday work. First confirm the sharing scope and remove unnecessary personal and commercial information. Select ongoing disputes carefully, focusing discussion on information available at the time, options and improvements.",
+          "Anonymise a refund complaint and pause at the customer’s second enquiry. Participants play the customer, frontline employee and manager, then compare different responses and arrangements.",
+          "Help select and adapt cases, design discussion questions, role-play and written response exercises, and practise judgement in familiar situations."
+        ],
+        [
+          "Problems recur despite annual training: how can exercises produce lasting improvements?",
+          "Identify whether the cause is skills, authority, information or workflow, then design appropriate training. Exercises should test decisions under time pressure and incomplete information. Agree improvements afterwards and review progress through work records and observation.",
+          "For repeated complaints about rescheduled events, simulate a last-minute change, refund requests, online criticism and media enquiries. If refund authority and notification lists are unclear, fix the process and check improvements in a second exercise.",
+          "Analyse recurring problems, design staged exercises and document actions, owners and review methods to connect learning with everyday work."
+        ],
+        [
+          "How much does a new policy affect us?",
+          "Identify who the policy applies to, when it takes effect and which tasks it changes. Managers need to understand operational adjustments, administrators need document and procedure requirements, and frontline staff need customer explanations. Translate the briefing into actions for each role.",
+          "An application scheme changes its document requirements. Frontline staff use the old checklist while administrators apply the new one, causing repeated requests for documents. A simulated application can compare old and new arrangements and changes for each role.",
+          "Organise official policies and guidance, compare them with organisational workflows and prepare role-specific priorities, scenario questions and action lists, identifying outstanding questions."
+        ]
+      ],
+      "sectionTitle": "Common questions",
+      "caseLabels": [
+        "Answer",
+        "Example situation",
+        "How U Vision can help"
+      ],
+      "scope": "Policy briefings are based on relevant official information and state its date. Questions involving specific legal application or other professional judgement should be referred to appropriately qualified professionals."
     }
   },
   {
