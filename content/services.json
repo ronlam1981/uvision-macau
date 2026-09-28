@@ -1,5 +1,221 @@
 [
   {
+    "slug": "building",
+    "category": 1,
+    "zh": {
+      "title": "分析樓宇管理糾紛",
+      "headline": "大廈管理有爭議，先睇清卡喺邊一步。",
+      "lead": "大廈準備做大維修，報價、工程範圍同開會文件睇唔明，點樣提出疑問？管理費、帳目、管理公司服務及業主大會的爭議，也可能互相牽連。",
+      "help": "梳理工程、帳目及會議資料，列出需要釐清的重點，協助準備提問及溝通。先分清已確認的事實、各方說法及資料缺口，再比較可行的下一步。",
+      "introTitle": "資料好多、說法不同，先把問題逐項拆開。",
+      "intro": [
+        "你可能已經問過管理處、開過會，手上亦有相片、單據和群組訊息，仍然不知道下一步可以做甚麼。",
+        "以下由大維修開始，整理十個常見情境。每題分為「常見情境」、「先釐清」及「宇見可以怎樣幫」，方便你辨認問題，找到值得先做的一步。"
+      ],
+      "note": "以下為常見情境示例，並非已完成的客戶案例。",
+      "cases": [
+        [
+          "外牆或升降機要大修，報價差很遠怎樣選？",
+          "有人認為必須立即施工，有人質疑工程是否必要；幾份報價價錢差很遠，卻看不出工序、材料和保養有何不同。",
+          "工程要解決甚麼問題、是否涉及即時安全、各報價是否按相同規格提出，以及由誰監督、驗收和跟進保養。金額大，也不代表所有工程都適用同一種表決要求。",
+          "整理技術人員意見和報價差異，列出需要承辦商澄清的問題，協助業主在充分掌握資訊後作決定；工程診斷與驗收由合資格專業人士負責。"
+        ],
+        [
+          "樓下漏水，是否一定由樓上負責？",
+          "樓下見到天花滲水，樓上說單位沒有漏水；管理處認為是私人問題，樓上則懷疑外牆或公共水管。各方未查清水源，已開始爭論誰要維修、誰要賠償。",
+          "水從哪裏來、哪些位置屬私人或共同部分、現有檢測能證明甚麼。滲水位置、水源、維修責任和賠償責任，是四個不同問題。",
+          "整理滲漏時間線、照片、檢測及各方回覆，找出證據缺口，協調下一輪檢查與止水安排，讓討論由猜測回到事實。"
+        ],
+        [
+          "管理費加價，業主可以拒交嗎？",
+          "管理方說成本上升，業主卻看不到預算；住宅、商舖和車位的分攤方式不清楚。有人因不滿服務而停交管理費，令欠款問題與服務爭議混在一起。",
+          "收費依據、預算與實際支出、加價如何決定，以及每戶如何計算。服務是否達標，也應另按合同及實際情況核對。",
+          "整理收支與分攤資料，列出業主需要管理方回答的問題，協助雙方把「收費是否合理」和「服務如何改善」分別處理。"
+        ],
+        [
+          "大廈帳目不透明，業主可以查甚麼？",
+          "大廈只張貼簡單收支表，業主想知道工程費、銀行結餘或儲備基金用途，卻未能取得清楚資料。另一方面，帳目有疑問，也不能立即當作有人挪用公款。",
+          "要查哪段期間、哪筆支出，以及對應的單據、合同、付款和銀行紀錄。要求愈具體，愈容易找到真正的差異。",
+          "建立文件清單，整理帳目疑點與管理方回覆；如涉及複雜帳務，再協助界定需要交由會計專業人士核查的範圍。"
+        ],
+        [
+          "管理公司服務差，投訴多次仍沒有改善？",
+          "清潔不足、保安巡查欠妥、設備故障遲遲不修；住戶覺得無人理會，管理公司則認為自己已按合同提供服務。",
+          "合同承諾的服務、實際發生的情況、問題持續多久，以及管理機關曾如何監督和跟進。將籠統的「服務差」變成可核對的項目，才有改善基礎。",
+          "把投訴整理成「合同要求、實際情況、證據、改善期限」清單，協助提出具體要求並追蹤結果。"
+        ],
+        [
+          "想換管理公司，為何遲遲換不成？",
+          "部分業主希望更換，部分擔心服務中斷；舊合同何時屆滿、如何通知、由誰決定，也未談清楚。即使通過更換，帳目、款項、鎖匙及設備資料仍可能交接不順。",
+          "合同條款、適用的決議程序、通知時間及新舊公司的交接安排。作出更換決定，只是其中一步；能否平穩接管，同樣重要。",
+          "梳理決策及時間表、比較新方案、製作交接清單，協助業主與新舊管理方就具體事項溝通。"
+        ],
+        [
+          "業主大會開完，為何決議仍被質疑？",
+          "有人說沒有收到通知、議程寫得不清楚；有人質疑委託書、業主資格或票數計算。會議開完，爭議反而比開會前更多。",
+          "召集書、議程、出席及代理資料、單位份額、每項議案的票數和會議錄。不同事項的通過要求並不相同，不能用同一個門檻處理所有議案。",
+          "在會前整理議題及所需資料，讓業主明白要決定甚麼；會後整理紀錄及爭議點。涉及決議效力或法定期限，應及早交由律師判斷。"
+        ],
+        [
+          "管委會被指越權，或想做事卻做不到？",
+          "業主質疑管委會擅自批款、簽約或欠缺交代；管委會則認為業主只提出不滿，卻沒有人願意參與。雙方對權限和責任的理解不同。",
+          "誰作出決定、依據哪項授權、有沒有會議和付款紀錄；究竟是程序不足、溝通不足，還是實際履職問題。",
+          "梳理決策與匯報流程，整理業主關注事項，協助管理機關建立較清晰的分工、紀錄和回應方式。"
+        ],
+        [
+          "走廊被佔、天台上鎖，用了多年就算私人地方？",
+          "有人長期在走廊放雜物、獨自使用平台或持有天台鎖匙；其他業主擔心通行、安全及使用權，雙方各執一詞。",
+          "物業登記、設定憑證、核准圖則及大廈規章如何記載，現場使用又對其他人造成甚麼影響。「一直以來都咁用」不能單獨解答權屬問題。",
+          "整理文件、現場情況及各方訴求，協助提出可執行的改善方案，減少爭議一直停留在口頭指責。"
+        ],
+        [
+          "噪音、滴水、油煙反覆出現，管理處可以管到幾盡？",
+          "住戶希望管理處立即制止，管理處說只能勸諭；涉事住戶又不承認問題。反覆投訴後，鄰里關係變差，問題仍未解決。",
+          "問題來源、發生時間、持續情況、影響程度，以及管理處已採取甚麼措施。不同滋擾涉及的規章及主管部門可能不同。",
+          "整理事件紀錄及溝通經過，協助制定具體改善要求，判斷下一步應由管理機關跟進、向主管部門反映，還是尋求其他專業協助。"
+        ]
+      ],
+      "outputsTitle": "一宗糾紛，可能同時卡住幾件事",
+      "outputsIntro": "現場問題、帳目、合同、業主大會及各方溝通，往往交織在一起。按個案需要及約定範圍，宇見可協助：",
+      "outputs": [
+        [
+          "整理資料",
+          "將時間線、文件和各方說法放在一起。"
+        ],
+        [
+          "釐清問題",
+          "分清已知事實、爭議及需要再查的部分。"
+        ],
+        [
+          "比較選項",
+          "了解不同做法的條件、成本和影響。"
+        ],
+        [
+          "推進下一步",
+          "準備溝通重點、跟進清單與決策資料。"
+        ]
+      ],
+      "outputsEnd": "先把資料整理好，分清哪些事實已確認、哪些仍待查證，再比較可採取的行動。",
+      "nextTitle": "你手上的資料很多，卻不知道下一步怎樣走？",
+      "next": [
+        "無論你是個別業主、管理機關，還是正在處理相關問題的機構，都可以先簡單告訴我們："
+      ],
+      "nextList": [
+        "發生甚麼事，涉及哪些工程、管理安排或會議？",
+        "已經做過甚麼，手上有甚麼資料？",
+        "目前最想解決甚麼，有沒有即將到來的會議或回覆期限？"
+      ],
+      "nextEnd": "我們先了解情況，再說明能否協助、服務範圍及費用。請先確認提交方式，再提供個案文件。",
+      "scope": "宇見提供資料整理、問題分析及溝通協調服務，不提供法律諮詢。法律意見、工程鑑定及審計工作，須由相關合資格專業人士提供。"
+    },
+    "en": {
+      "title": "Building management dispute analysis",
+      "headline": "A building dispute? First identify what is holding things up.",
+      "lead": "Your building is planning major repairs, but the quotations, scope and meeting papers are unclear. What questions should you ask? Disputes over management fees, accounts, service standards and owners’ meetings may also be connected.",
+      "help": "Organise project, accounting and meeting information, identify points needing clarification, and prepare questions and communications. Separate confirmed facts, differing accounts and missing information before comparing next steps.",
+      "introTitle": "Many documents, different accounts: work through each issue.",
+      "intro": [
+        "You may already have contacted the management office, attended meetings and collected photographs, receipts and group messages, yet still be unsure what to do next.",
+        "Starting with major repairs, these ten situations set out the issue, what to clarify first and how U Vision can help."
+      ],
+      "note": "These are illustrative situations, not completed client cases.",
+      "cases": [
+        [
+          "Major façade or lift repairs: how do you compare very different quotations?",
+          "Some owners want work to start immediately; others question whether it is necessary. Prices vary widely, while differences in methods, materials and warranties remain unclear.",
+          "What problem will the works address? Is there an immediate safety issue? Are quotations based on the same specifications? Who will supervise, inspect and follow up warranties? A large contract value does not mean every project has the same voting requirements.",
+          "Organise technical advice and quotation differences, prepare questions for contractors and help owners make informed decisions. Qualified professionals handle technical diagnosis and acceptance inspections."
+        ],
+        [
+          "Water downstairs: is the upstairs owner necessarily responsible?",
+          "Water appears on a downstairs ceiling, but the upstairs owner reports no leak. Management considers it a private matter, while the owner suspects the façade or a communal pipe. Responsibility is disputed before the source is established.",
+          "Identify the water source, private and common areas, and what existing tests can establish. The visible location, source, repair responsibility and compensation responsibility are separate questions.",
+          "Organise the timeline, photographs, tests and responses, identify evidence gaps and coordinate further inspections and measures to stop the water."
+        ],
+        [
+          "Management fees are rising: can owners refuse to pay?",
+          "Management cites rising costs, but owners cannot see the budget or understand how homes, shops and parking spaces share charges. Withholding payments over poor service can mix fee arrears with service disputes.",
+          "Clarify the basis of charges, budgets and actual spending, how increases were decided and how each unit’s share is calculated. Assess service performance separately against the contract and actual conditions.",
+          "Organise income, expenditure and allocation information; prepare questions for management; and help address fee concerns and service improvements separately."
+        ],
+        [
+          "Unclear building accounts: what information should owners request?",
+          "Only a brief statement is displayed. Owners cannot obtain clear information about works payments, bank balances or reserves. Questions about accounts do not by themselves establish misuse of funds.",
+          "Specify the period and transactions, then identify supporting receipts, contracts, payments and bank records. Precise requests make discrepancies easier to locate.",
+          "Prepare a document list and organise questions and responses. Where accounts are complex, help define the scope for review by an accounting professional."
+        ],
+        [
+          "Poor management services: why have repeated complaints achieved little?",
+          "Cleaning, security patrols or repairs fall short. Residents feel ignored, while the company says it has met its contract.",
+          "Compare contractual commitments with recorded events, duration and management oversight. Turn broad dissatisfaction into specific, verifiable issues.",
+          "Organise a list of contract requirements, actual conditions, evidence and improvement deadlines; help communicate requests and track progress."
+        ],
+        [
+          "Why is changing the management company so difficult?",
+          "Owners disagree about replacement and possible disruption. Contract expiry, notice and decision-making are unclear. Even after a decision, accounts, funds, keys and equipment records may not transfer smoothly.",
+          "Clarify contract terms, the applicable decision procedure, notice periods and handover arrangements. A replacement decision is only one step towards continuity of service.",
+          "Organise the decision timetable, compare proposals, prepare a handover checklist and support communication with outgoing and incoming management."
+        ],
+        [
+          "Why is an owners’ meeting resolution still disputed?",
+          "Owners question notices, agendas, proxy documents, eligibility or vote counting. The meeting leaves more disagreement than before.",
+          "Organise the notice, agenda, attendance and proxy records, unit shares, votes on each motion and minutes. Different matters may have different approval requirements.",
+          "Help prepare clear proposals and supporting information before meetings, then organise records and disputed points afterwards. A lawyer should promptly assess questions of validity or statutory deadlines."
+        ],
+        [
+          "Is the management committee exceeding its authority—or unable to act?",
+          "Owners question spending, contracts or reporting, while committee members feel that complaints are not matched by participation. Expectations of authority and responsibility differ.",
+          "Identify who decided what, the supporting authority and available meeting and payment records. Distinguish procedural gaps, communication gaps and performance issues.",
+          "Map decision and reporting processes, organise owners’ concerns and help establish clearer responsibilities, records and responses."
+        ],
+        [
+          "Corridors occupied or roof access locked: does long use make an area private?",
+          "Belongings obstruct corridors or someone exclusively uses a platform or holds roof keys. Other owners raise concerns about access, safety and use.",
+          "Compare property registration, constitutive documents, approved plans and building rules with actual use and its impact. Long-standing use alone does not settle ownership.",
+          "Organise documents, site conditions and each party’s concerns, and help formulate practical improvements."
+        ],
+        [
+          "Recurring noise, dripping water or fumes: how far can management intervene?",
+          "Residents want immediate action, management says it can only advise, and the alleged source denies the problem. Complaints strain relationships without resolving the issue.",
+          "Record the source, timing, duration, impact and steps already taken. Different nuisances may involve different rules and authorities.",
+          "Organise incident and communication records, prepare specific improvement requests and clarify whether management, an authority or another professional should handle the next step."
+        ]
+      ],
+      "outputsTitle": "One dispute may involve several connected issues",
+      "outputsIntro": "Physical conditions, accounts, contracts, meetings and communication often overlap. Depending on the agreed scope, we can help with:",
+      "outputs": [
+        [
+          "Organising information",
+          "Bring together timelines, documents and each party’s account."
+        ],
+        [
+          "Clarifying issues",
+          "Separate known facts, disagreements and matters needing investigation."
+        ],
+        [
+          "Comparing options",
+          "Understand the conditions, costs and implications of different approaches."
+        ],
+        [
+          "Planning next steps",
+          "Prepare discussion points, follow-up lists and decision materials."
+        ]
+      ],
+      "outputsEnd": "Establish what is known and what still needs checking before comparing possible actions.",
+      "nextTitle": "You have plenty of information, but are unsure what to do next?",
+      "next": [
+        "Individual owners, building management bodies and organisations can start by telling us:"
+      ],
+      "nextList": [
+        "What happened, and which works, management arrangements or meetings are involved?",
+        "What have you already tried, and what information do you have?",
+        "What do you most want to resolve? Is a meeting or response deadline approaching?"
+      ],
+      "nextEnd": "We first understand the situation, then explain whether we can help, the scope and fees. Please confirm the submission method before sending case documents.",
+      "scope": "U Vision provides information organisation, issue analysis and communication support, not legal advice. Legal opinions, engineering assessments and audits must be provided by appropriately qualified professionals."
+    }
+  },
+  {
     "slug": "business",
     "category": 2,
     "zh": {

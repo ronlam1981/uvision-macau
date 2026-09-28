@@ -7,7 +7,7 @@ type Language = "zh" | "en";
 
 /* 滲漏水個案的專屬落地頁，靜態檔放在 public/leak/，與本站同一域名。 */
 const SEEPAGE_URL = "leak/consult.html";
-const SERVICE_URLS = [SEEPAGE_URL, null, "business/consult.html", "crisis/consult.html", "training/consult.html", "government/consult.html", "other/consult.html"];
+const SERVICE_URLS = [SEEPAGE_URL, "building/consult.html", "business/consult.html", "crisis/consult.html", "training/consult.html", "government/consult.html", "other/consult.html"];
 
 const examples = {
   zh: {
@@ -178,7 +178,7 @@ export default function Home() {
               <blockquote>{situation}</blockquote>
               <p className="example-label">{e.help}</p><p className="example-help">{help}</p>
               {index === 0 && <span className="example-link">{t.seepageCta}<ArrowRight size={16}/></span>}
-              {index >= 2 && <span className="example-link">{lang === "zh" ? "了解常見情境及協助方式" : "Explore situations and support"}<ArrowRight size={16}/></span>}
+              {index >= 1 && <span className="example-link">{lang === "zh" ? "了解常見情境及協助方式" : "Explore situations and support"}<ArrowRight size={16}/></span>}
             </>;
             const url = SERVICE_URLS[index];
             return url
