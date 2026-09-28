@@ -40,20 +40,13 @@ const examples = {
 
 const copy = {
   zh: {
-    nav: ["創辦人", "我們如何協助", "服務流程", "聯絡我們"], navIds: ["founder", "services", "process", "contact"], language: "EN",
+    nav: ["創辦人", "我們如何協助", "聯絡我們"], navIds: ["founder", "services", "contact"], language: "EN",
     eyebrow: "See Clearly · Know Your Options", hero: "釐清問題　看清選項",
     heroText: "憑藉創辦人林宇滔多年來參與處理數千個個案及事件的經驗，宇見協助個人、家庭、企業及機構理清各類問題、釐清事實、辨識風險及比較可行選項，更安心地選擇下一步，減少不必要的時間與金錢耗費，少走冤枉路。",
     consult: "查詢我們能否協助", learn: "了解服務", promiseTitle: "我們陪你看清，不替你作主",
     promise: "我們不承諾個案結果，也不以「關係」作賣點。宇見承諾的是有系統的方法、透明的判斷，以及清晰可行的下一步。",
     servicesKicker: "我們如何協助", servicesTitle: "遇到以下情況，\n宇見可以陪你理清下一步。",
     servicesIntro: "當資料零散、說法不一，我們先幫你看清問題，再按情況說明可提供的支援。",
-    processKicker: "服務流程", processTitle: "從混亂，到清晰可行。",
-    steps: [
-      ["01", "整理資料", "把文件、說法、事件和時間線放回正確位置。"],
-      ["02", "釐清核心問題", "區分已知事實、未知事項、假設與真正需要。"],
-      ["03", "評估選項及風險", "比較各方案的成本、時間、代價及後續影響。"],
-      ["04", "制定下一步", "形成具體次序、溝通重點、文件清單及檢查節點。"],
-    ],
     waysKicker: "支援方式", waysTitle: "按問題需要，可由初步了解、個案分析，到持續支援。",
     ways: [["初步了解", "了解問題、整理重點，判斷下一步應由誰處理。"], ["個案分析", "根據已提供資料，拆解問題、選項、風險及行動次序。"], ["持續支援", "就複雜個案協助跟進資料、會議、溝通及進度節點。"]],
     price: "服務範圍及收費會在了解個案後說明；開始工作前，會先確認內容及安排。",
@@ -78,20 +71,13 @@ const copy = {
     footerTagline: "釐清問題　看清選項", rights: "宇見顧問有限公司。保留所有權利。",
   },
   en: {
-    nav: ["Founder", "How we help", "Our process", "Contact"], navIds: ["founder", "services", "process", "contact"], language: "繁中",
+    nav: ["Founder", "How we help", "Contact"], navIds: ["founder", "services", "contact"], language: "繁中",
     eyebrow: "Founded by Ron Lam", hero: "See Clearly · Know Your Options",
     heroText: "Drawing on founder Ron Lam’s years of experience helping handle thousands of cases and incidents, U Vision helps individuals, families, businesses and organisations clarify problems and facts, identify risks and compare practical options. Choose your next step with greater confidence, reduce unnecessary costs in time and money, and avoid needless detours.",
     consult: "Ask whether we can help", learn: "Explore our services", promiseTitle: "We help you see clearly. You remain in control.",
     promise: "We do not guarantee outcomes or sell access through connections. We commit to a structured method, transparent judgement and clear, practical next steps.",
     servicesKicker: "How we help", servicesTitle: "Facing situations like these?\nWe can help clarify your next step.",
     servicesIntro: "When information is scattered and accounts conflict, we help clarify the issue first, then explain the support we can provide.",
-    processKicker: "Our process", processTitle: "From confusion to a clear, workable plan.",
-    steps: [
-      ["01", "Organise information", "Put documents, accounts, events and timelines in the right order."],
-      ["02", "Clarify the core issue", "Separate known facts, unknowns, assumptions and the real need."],
-      ["03", "Assess options and risks", "Compare cost, time, trade-offs and downstream effects."],
-      ["04", "Set the next steps", "Define priorities, key messages, document lists and review points."],
-    ],
     waysKicker: "Support options", waysTitle: "Depending on the issue, support may range from an initial discussion to case analysis or ongoing support.",
     ways: [["Initial discussion", "Understand the issue, identify priorities and decide who should handle the next step."], ["Case analysis", "Review the available information and set out issues, options, risks and priorities."], ["Ongoing support", "Support complex cases through information review, meetings, communications and progress checks."]],
     price: "Scope and fees are explained after we understand the case. The work and arrangement will be confirmed before we begin.",
@@ -189,9 +175,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="process" className="process-section"><div className="section-shell">
-        <div className="section-heading"><p className="kicker light">{t.processKicker}</p><h2>{t.processTitle}</h2></div>
-        <div className="steps-grid">{t.steps.map(([number, title, text]) => <article className="step" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+      <section id="support" className="process-section"><div className="section-shell">
         <div className="process-support">
           <p className="kicker light">{t.waysKicker}</p><p className="support-intro">{t.waysTitle}</p>
           <div className="support-grid">{t.ways.map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
